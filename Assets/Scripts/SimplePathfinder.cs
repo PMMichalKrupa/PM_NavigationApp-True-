@@ -462,15 +462,21 @@ public class SimplePathfinder : MonoBehaviour
 
         // Szukanie node'ów uwzględniając scenę
         startNode = FindNodeByName(selected.startNode, selected.startScene);
-        targetNode = FindNodeByName(selected.endNode, selected.endScene);
+        if (selected.startScene == selected.endScene)
+        {
+            targetNode = FindNodeByName(selected.endNode, selected.endScene);
+        }
+        else
+        {
+            targetNode = null; // ustawimy później przez system multi-floor
+        }
 
         if (startNode == null)
         {
-            Debug.LogError($"Nie znaleziono startNode {selected.startNode} w scenie {selected.startScene}");
-            return null;
+            Debug.LogWarning($"StartNode poza sceną: {selected.startNode} ({selected.startScene})");
         }
 
-        if (targetNode == null)
+        if (selected.startScene == selected.endScene && targetNode == null)
         {
             Debug.LogError($"Nie znaleziono targetNode {selected.endNode} w scenie {selected.endScene}");
             return null;
@@ -606,5 +612,41 @@ public class SimplePathfinder : MonoBehaviour
             n.nodeName == nodeName &&
             n.sceneName == sceneName
         );
+    }
+    public APIRoute GetCurrentRouteFromAPI()
+    {
+        if (apiRoutes == null || apiRoutes.Length == 0)
+        {
+            Debug.LogWarning("Brak tras z API");
+            return null;
+        }
+
+        int current = TimeParser.CurrentMinutes();
+
+        foreach (var r in apiRoutes)
+        {
+            int start = TimeParser.ToMinutes(r.startTime);
+            int end = TimeParser.ToMinutes(r.endTime);
+
+            if (current >= start && current < end)
+            {
+                return r;
+            }
+        }
+
+        Debug.LogWarning("Brak trasy dla tej godziny");
+        return null;
+    }
+    public Node FindStairsByID(string staircaseID)
+    {
+        Node[] nodes = FindObjectsOfType<Node>();
+
+        foreach (var n in nodes)
+        {
+            if (n.isStairs && n.staircaseID == staircaseID)
+                return n;
+        }
+
+        return null;
     }
 }

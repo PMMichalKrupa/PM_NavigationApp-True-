@@ -13,191 +13,17 @@ MonoBehaviour:
   m_Name: NodeDatabase
   m_EditorClassIdentifier: Assembly-CSharp::NodeDatabase
   nodes:
-  - nodeName: 013d (3)
-    sceneName: HP1
+  - nodeName: Node_example 4
+    sceneName: WCh1
     buildingID: 1
-  - nodeName: 020c (1)
-    sceneName: HP1
+  - nodeName: Node_example 2
+    sceneName: WCh1
     buildingID: 1
-  - nodeName: 010c
-    sceneName: HP1
+  - nodeName: Node_example_3
+    sceneName: WCh1
     buildingID: 1
-  - nodeName: 013c
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 015d
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 018c
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 08ic (1)
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 019d
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 016c
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 04c1 (3)
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 024c
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 018Ad
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 020c1 (1)
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 09c
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 08d
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 011c (1)
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 020c
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 027c
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: SEd
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 08c
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 023c
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 020d
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 08ic
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 013d (2)
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 07c
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 010d
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 06c
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: SEc
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 07d
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: EStairs
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 017d
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 023d
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 04c1
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 015c
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 013d (1)
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 04c1 (4)
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: S stairs
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 04c1 (1)
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 04c1 (2)
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 022c
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 08ic (3)
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 011c
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 09d
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 022d (1)
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: WStairs
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 012d
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 027d
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 022d
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 021c
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 04d
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 019c
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 08ic (2)
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 012c
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 011d
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 06d
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 013d
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: SEc1
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 04c
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 024d
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 020c1
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 012c (1)
-    sceneName: HP1
-    buildingID: 1
-  - nodeName: 016d
-    sceneName: HP1
+  - nodeName: StairNode
+    sceneName: WCh1
     buildingID: 1
   - nodeName: S19
     sceneName: WCh0
@@ -703,7 +529,7 @@ MonoBehaviour:
   - nodeName: C74
     sceneName: WCh0
     buildingID: 1
-  - nodeName: 128
+  - nodeName: 128A
     sceneName: WCh0
     buildingID: 1
   - nodeName: 53
@@ -823,15 +649,189 @@ MonoBehaviour:
   - nodeName: 25
     sceneName: WCh0
     buildingID: 1
-  - nodeName: Node_example 4
-    sceneName: WCh1
+  - nodeName: 013d (3)
+    sceneName: HP1
     buildingID: 1
-  - nodeName: Node_example 2
-    sceneName: WCh1
+  - nodeName: 020c (1)
+    sceneName: HP1
     buildingID: 1
-  - nodeName: Node_example 3
-    sceneName: WCh1
+  - nodeName: 010c
+    sceneName: HP1
     buildingID: 1
-  - nodeName: StairNode
-    sceneName: WCh1
+  - nodeName: 013c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 015d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 018c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 08ic2
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 019d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 016c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 04c1 (3)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 024c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 018Ad
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 020c1 (1)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 09c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 08d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 011c (1)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 020c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 027c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: SEd
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 08c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 023c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 020d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 08ic
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 013d (2)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 07c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 010d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 06c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: SEc
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 07d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: EStairs
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 017d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 023d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 04c1
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 015c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 013d (1)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 04c1 (4)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: S stairs
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 04c1 (1)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 04c1 (2)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 022c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 08ic (3)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 011c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 09d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 022d (1)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: WStairs
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 012d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 027d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 022d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 021c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 04d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 019c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 08ic (2)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 012c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 011d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 06d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 013d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: SEc1
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 04c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 024d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 020c1
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 012c (1)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 016d
+    sceneName: HP1
     buildingID: 1

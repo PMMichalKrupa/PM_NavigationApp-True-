@@ -20,12 +20,12 @@
     },
     {
       "routeName": "Inner_HP1_Test",
-      "startNode": "016c",
+      "startNode": "015c",
       "startScene": "HP1",
-      "endNode": "024c",
-      "endScene": "HP1",
+      "endNode": "Node_example_3",
+      "endScene": "WCh1",
       "startTime": "17:00",
-      "endTime": "18:00"
+      "endTime": "23:00"
     }
   ]
 }

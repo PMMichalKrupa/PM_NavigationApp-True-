@@ -21,7 +21,7 @@ MonoBehaviour:
     priority: 0
   - routeName: EnglishToEngineering
     startNodeName: 04c
-    endNodeName: 08c
+    endNodeName: 08d
     startHour: 16
     endHour: 24
     priority: 0

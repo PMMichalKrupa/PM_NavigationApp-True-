@@ -157,24 +157,23 @@ public class UIPathSelector : MonoBehaviour
 
         if (index == 1)
         {
-            APIRoute route = pathfinder.LoadRouteFromAPIByTime();
+            APIRoute route = pathfinder.GetCurrentRouteFromAPI();
 
             if (route == null)
                 return;
 
-            chosenStart = new NodeData
-            {
-                nodeName = route.startNode,
-                sceneName = route.startScene
-            };
+            chosenStart = pathfinder.FindNodeData(
+                route.startNode,
+                route.startScene
+            );
 
-            chosenEnd = new NodeData
+            if (chosenStart == null)
             {
-                nodeName = route.endNode,
-                sceneName = route.endScene
-            };
+                Debug.LogError("Nie znaleziono START z planu");
+                return;
+            }
 
-            SyncDropdownsWithRoute(route);
+            Debug.Log("Start ustawiony z planu: " + route.startNode);
 
             TryUpdatePath();
             return;
@@ -186,28 +185,6 @@ public class UIPathSelector : MonoBehaviour
         PlayerPrefs.DeleteKey("NextStartNode");
         PlayerPrefs.DeleteKey("SceneTransition");
         TryUpdatePath();
-    }
-    void SyncDropdownsWithRoute(APIRoute route)
-    {
-        int startIndex = allNodes.FindIndex(n =>
-            n.nodeName == route.startNode &&
-            n.sceneName == route.startScene);
-
-        if (startIndex >= 0)
-        {
-            startDropdown.SetValueWithoutNotify(startIndex + 2);
-            startDropdown.RefreshShownValue();
-        }
-
-        int endIndex = allNodes.FindIndex(n =>
-            n.nodeName == route.endNode &&
-            n.sceneName == route.endScene);
-
-        if (endIndex >= 0)
-        {
-            endDropdown.SetValueWithoutNotify(endIndex + 3);
-            endDropdown.RefreshShownValue();
-        }
     }
 
     // Wywoływane przez End Dropdown (OnValueChanged)
@@ -225,15 +202,25 @@ public class UIPathSelector : MonoBehaviour
 
         if (index == 1)
         {
-            // z planu
             useEmergencyExit = false;
 
-            pathfinder.LoadRouteFromAPIByTime();
-            chosenEnd = new NodeData
+            APIRoute route = pathfinder.GetCurrentRouteFromAPI();
+
+            if (route == null)
+                return;
+
+            chosenEnd = pathfinder.FindNodeData(
+                route.endNode,
+                route.endScene
+            );
+
+            if (chosenEnd == null)
             {
-                nodeName = pathfinder.targetNode.name,
-                sceneName = pathfinder.targetNode.sceneName
-            };
+                Debug.LogError("Nie znaleziono END z planu");
+                return;
+            }
+
+            Debug.Log("End ustawiony z planu: " + route.endNode);
 
             TryUpdatePath();
             return;
@@ -332,17 +319,18 @@ public class UIPathSelector : MonoBehaviour
 
                 if (!sameBuilding)
                 {
-                    Debug.Log("Inny budynek → emergencyExit");
                     transitionNode = startNodeReal.emergencyExit;
+                    PlayerPrefs.SetString("TransitionType", "Building");
                 }
                 else
                 {
-                    Debug.Log("Inne piętro → szukam schodów");
-
                     transitionNode = pathfinder.FindBestStairs(
                         startNodeReal,
                         endNodeData.sceneName
                     );
+
+                    PlayerPrefs.SetString("TransitionType", "Stairs");
+                    PlayerPrefs.SetString("TransitionStaircaseID", transitionNode.staircaseID);
                 }
 
                 if (transitionNode == null)
@@ -438,17 +426,33 @@ public class UIPathSelector : MonoBehaviour
             return;
 
         // START = node zapisany podczas przejścia między piętrami
-        string nextStartName = PlayerPrefs.GetString("NextStartNode", "");
-        string nextStartScene = PlayerPrefs.GetString("NextStartScene", "");
+        string transitionType = PlayerPrefs.GetString("TransitionType", "");
 
-        if (!string.IsNullOrEmpty(nextStartName))
+        Node nextStart = null;
+
+        if (transitionType == "Building")
         {
-            Node nextStart = pathfinder.FindNodeByName(nextStartName, nextStartScene);
+            nextStart = FindClosestEntranceNode();
+        }
+        else if (transitionType == "Stairs")
+        {
+            string staircaseID = PlayerPrefs.GetString("TransitionStaircaseID", "");
+            nextStart = pathfinder.FindStairsByID(staircaseID);
+        }
+        else
+        {
+            string nextStartName = PlayerPrefs.GetString("NextStartNode", "");
+            string nextStartScene = PlayerPrefs.GetString("NextStartScene", "");
 
-            if (nextStart != null)
+            if (!string.IsNullOrEmpty(nextStartName))
             {
-                pathfinder.startNode = nextStart;
+                nextStart = pathfinder.FindNodeByName(nextStartName, nextStartScene);
             }
+        }
+
+        if (nextStart != null)
+        {
+            pathfinder.startNode = nextStart;
         }
 
         // END = finalny cel użytkownika
@@ -487,5 +491,28 @@ public class UIPathSelector : MonoBehaviour
                 Debug.LogWarning("Brak SimplePathfinder w scenie!");
             }
         }
+    }
+    Node FindClosestEntranceNode()
+    {
+        Node[] nodes = FindObjectsOfType<Node>();
+
+        Node best = null;
+        float bestDist = Mathf.Infinity;
+
+        foreach (var n in nodes)
+        {
+            if (!n.name.EndsWith("_o"))
+                continue;
+
+            float d = Vector3.Distance(Vector3.zero, n.transform.position);
+
+            if (d < bestDist)
+            {
+                bestDist = d;
+                best = n;
+            }
+        }
+
+        return best;
     }
 }
