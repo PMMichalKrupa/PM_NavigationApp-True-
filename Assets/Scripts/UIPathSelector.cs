@@ -157,13 +157,24 @@ public class UIPathSelector : MonoBehaviour
 
         if (index == 1)
         {
-            pathfinder.LoadRouteFromAPIByTime();
+            APIRoute route = pathfinder.LoadRouteFromAPIByTime();
+
+            if (route == null)
+                return;
 
             chosenStart = new NodeData
             {
-                nodeName = pathfinder.startNode.name,
-                sceneName = pathfinder.startNode.sceneName
+                nodeName = route.startNode,
+                sceneName = route.startScene
             };
+
+            chosenEnd = new NodeData
+            {
+                nodeName = route.endNode,
+                sceneName = route.endScene
+            };
+
+            SyncDropdownsWithRoute(route);
 
             TryUpdatePath();
             return;
@@ -176,7 +187,28 @@ public class UIPathSelector : MonoBehaviour
         PlayerPrefs.DeleteKey("SceneTransition");
         TryUpdatePath();
     }
+    void SyncDropdownsWithRoute(APIRoute route)
+    {
+        int startIndex = allNodes.FindIndex(n =>
+            n.nodeName == route.startNode &&
+            n.sceneName == route.startScene);
 
+        if (startIndex >= 0)
+        {
+            startDropdown.SetValueWithoutNotify(startIndex + 2);
+            startDropdown.RefreshShownValue();
+        }
+
+        int endIndex = allNodes.FindIndex(n =>
+            n.nodeName == route.endNode &&
+            n.sceneName == route.endScene);
+
+        if (endIndex >= 0)
+        {
+            endDropdown.SetValueWithoutNotify(endIndex + 3);
+            endDropdown.RefreshShownValue();
+        }
+    }
 
     // Wywoływane przez End Dropdown (OnValueChanged)
     public void ChooseEnd(int index)

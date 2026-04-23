@@ -430,12 +430,12 @@ public class SimplePathfinder : MonoBehaviour
         //Debug.LogWarning($"Node nie znaleziony: {nodeName} ({sceneName})");
         return null;
     }
-    public void LoadRouteFromAPIByTime()
+    public APIRoute LoadRouteFromAPIByTime()
     {
         if (apiRoutes == null || apiRoutes.Length == 0)
         {
             Debug.LogWarning("Brak tras z API");
-            return;
+            return null;
         }
 
         int current = TimeParser.CurrentMinutes();
@@ -457,23 +457,23 @@ public class SimplePathfinder : MonoBehaviour
         if (selected == null)
         {
             Debug.LogWarning("Brak trasy dla tej godziny");
-            return;
+            return null;
         }
 
-        // 🔹 Szukanie node'ów uwzględniając scenę
-        startNode = FindNodeByName(selected.startNode);
-        targetNode = FindNodeByName(selected.endNode);
+        // Szukanie node'ów uwzględniając scenę
+        startNode = FindNodeByName(selected.startNode, selected.startScene);
+        targetNode = FindNodeByName(selected.endNode, selected.endScene);
 
         if (startNode == null)
         {
             Debug.LogError($"Nie znaleziono startNode {selected.startNode} w scenie {selected.startScene}");
-            return;
+            return null;
         }
 
         if (targetNode == null)
         {
             Debug.LogError($"Nie znaleziono targetNode {selected.endNode} w scenie {selected.endScene}");
-            return;
+            return null;
         }
 
         DrawPath();
@@ -481,6 +481,7 @@ public class SimplePathfinder : MonoBehaviour
         UIPathSelector ui = FindObjectOfType<UIPathSelector>();
         if (ui != null)
             ui.SyncWithPathfinder();
+        return selected;
     }
     public void LoadRoutesFromAPI(APIRoute[] routes)
     {

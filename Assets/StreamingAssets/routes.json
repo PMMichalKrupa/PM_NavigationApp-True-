@@ -17,6 +17,15 @@
       "endScene": "WCh1",
       "startTime": "09:10",
       "endTime": "10:00"
+    },
+    {
+      "routeName": "Inner_HP1_Test",
+      "startNode": "016c",
+      "startScene": "HP1",
+      "endNode": "024c",
+      "endScene": "HP1",
+      "startTime": "17:00",
+      "endTime": "18:00"
     }
   ]
 }
