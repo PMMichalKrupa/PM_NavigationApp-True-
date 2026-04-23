@@ -1,0 +1,837 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c636eeac71e74e7438ec7b1471f1a06d, type: 3}
+  m_Name: NodeDatabase
+  m_EditorClassIdentifier: Assembly-CSharp::NodeDatabase
+  nodes:
+  - nodeName: 013d (3)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 020c (1)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 010c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 013c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 015d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 018c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 08ic (1)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 019d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 016c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 04c1 (3)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 024c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 018Ad
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 020c1 (1)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 09c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 08d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 011c (1)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 020c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 027c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: SEd
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 08c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 023c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 020d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 08ic
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 013d (2)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 07c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 010d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 06c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: SEc
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 07d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: EStairs
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 017d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 023d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 04c1
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 015c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 013d (1)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 04c1 (4)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: S stairs
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 04c1 (1)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 04c1 (2)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 022c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 08ic (3)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 011c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 09d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 022d (1)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: WStairs
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 012d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 027d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 022d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 021c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 04d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 019c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 08ic (2)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 012c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 011d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 06d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 013d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: SEc1
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 04c
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 024d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 020c1
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 012c (1)
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: 016d
+    sceneName: HP1
+    buildingID: 1
+  - nodeName: S19
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S7
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 10F
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 9A
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S78A
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 1A
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S46/47
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S73
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 79
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: C78A
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 91
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S65
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S72
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 21
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 65
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 15
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 116
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 84
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 58
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S70
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S36
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 126
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 1E
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 10E
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S51
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 2E
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S35
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S61
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 36
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 73
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: E
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 42
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 11B
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: C78
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S22
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 59
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 3
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S58
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S30
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 5A
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 5D
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 6D
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 6E
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 68
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 19
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: C70
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: F
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 2
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S76
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S63
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: C76
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 5F
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 35
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S2
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: D
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: C77
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S36A
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S10
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 123
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 17
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S38
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 30
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S9
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 124
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: A
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: C73
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S48
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 23
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S57
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 112
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S31
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S37
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S34
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S67
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S39
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 5E
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S3
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 14
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 11A
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S55
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 5C
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 85
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 31
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 83
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 3B
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S17
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S56
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S28
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S43
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: C60
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 12D
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 72
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 12F
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 9F
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 3F
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 131
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S73A
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: C72A
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S24
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 3D
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 9E
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 86
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S66
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 20
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S72A
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 64
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 114
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 9C
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 10
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 28
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S74
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S62
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 60
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 5
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 44
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 95
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S19A
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S49
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S32
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 93
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 127
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 9B
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S40
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 67
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 3A
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 96
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 78
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 11F
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 66
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 11C
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S59
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S69
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S16
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 89
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 99
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 48
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 1
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S61a
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 2C
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 61
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S60
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 27
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 12A
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S8
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 113
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 101
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 10D
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 69
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S68
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 9D
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 1C
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 7
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S54
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 16
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 10B
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 12B
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 118
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: s77
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S6
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 97
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 6A
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S18
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 33
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 4D
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 71
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 57
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 2A
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: C74
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 128
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 53
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 115
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: Main Entrance
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 94
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S64
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S14
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 1F
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 129
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 62
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S78
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S34A
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 41
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 8F
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: C71
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S11
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 121
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 13
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S25
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S1
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S28A
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 5B
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 4
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 8
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 120
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 11
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: C73A
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 92
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 100
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 56
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 11D
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S71
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S20
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S33
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 125
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: S21
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 39
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 4C
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: C72
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: 25
+    sceneName: WCh0
+    buildingID: 1
+  - nodeName: Node_example 4
+    sceneName: WCh1
+    buildingID: 1
+  - nodeName: Node_example 2
+    sceneName: WCh1
+    buildingID: 1
+  - nodeName: Node_example 3
+    sceneName: WCh1
+    buildingID: 1
+  - nodeName: StairNode
+    sceneName: WCh1
+    buildingID: 1

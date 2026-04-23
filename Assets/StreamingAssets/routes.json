@@ -1,0 +1,22 @@
+{
+  "routes": [
+    {
+      "routeName": "WCh0_to_HP1",
+      "startNode": "WCh0_Node1",
+      "startScene": "WCh0",
+      "endNode": "HP1_Node1",
+      "endScene": "HP1",
+      "startTime": "08:00",
+      "endTime": "09:00"
+    },
+    {
+      "routeName": "HP1_to_WCh1",
+      "startNode": "HP1_Node2",
+      "startScene": "HP1",
+      "endNode": "WCh1_Node1",
+      "endScene": "WCh1",
+      "startTime": "09:10",
+      "endTime": "10:00"
+    }
+  ]
+}

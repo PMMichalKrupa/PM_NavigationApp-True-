@@ -1,0 +1,2 @@
+12.12 Próbowałem przekonwertować pliki DWG do FBX aby wrzucić je do Unity.
+Część się udała, a część nie

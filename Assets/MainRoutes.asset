@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9ef5f9fd7527b4e86bbf10d4ee33e1, type: 3}
+  m_Name: MainRoutes
+  m_EditorClassIdentifier: Assembly-CSharp::RouteDatabase
+  routes:
+  - routeName: MathToEnglish
+    startNodeName: 06c
+    endNodeName: 04c
+    startHour: 8
+    endHour: 16
+    priority: 0
+  - routeName: EnglishToEngineering
+    startNodeName: 04c
+    endNodeName: 08c
+    startHour: 16
+    endHour: 24
+    priority: 0
+  - routeName: EngineeringToMath
+    startNodeName: 08c
+    endNodeName: 06c
+    startHour: 24
+    endHour: 8
+    priority: 0
