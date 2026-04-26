@@ -15,6 +15,8 @@ public class Node : MonoBehaviour
     public Node emergencyExit;
     [Header("Building")]
     public string buildingID;
+    [Header("UI")]
+    public bool showInUI = true;
     [Header("Multi-floor")]
     public bool isStairs = false;
 

@@ -13,4 +13,5 @@ public class NodeData
     public string nodeName;     // nazwa punktu
     public string sceneName;    // nazwa sceny / piętra
     public string buildingID;
+    public bool showInUI = true;
 }

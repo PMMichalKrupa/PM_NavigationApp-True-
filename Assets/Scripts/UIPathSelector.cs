@@ -39,8 +39,8 @@ public class UIPathSelector : MonoBehaviour
         {
             allNodes = new List<NodeData>(db.nodes);
 
-            // filtr "_o"
-            allNodes = allNodes.FindAll(n => !n.nodeName.EndsWith("_o"));
+            // filtr punktów ukytych
+            allNodes = allNodes.FindAll(n => n.showInUI);
 
             // sortowanie
             allNodes.Sort((a, b) => (a.sceneName + a.nodeName).CompareTo(b.sceneName + b.nodeName));

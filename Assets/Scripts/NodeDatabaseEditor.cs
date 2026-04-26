@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
 using UnityEditor;
-using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
+using UnityEngine;
 
 public class NodeDatabaseEditor : EditorWindow
 {
@@ -53,6 +54,7 @@ public class NodeDatabaseEditor : EditorWindow
             data.nodeName = n.name;
             data.sceneName = n.gameObject.scene.name;
             data.buildingID = n.buildingID;
+            data.showInUI = n.showInUI;
 
             database.nodes.Add(data);
         }
