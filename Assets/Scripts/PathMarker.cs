@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PathMarker : MonoBehaviour
@@ -6,20 +7,23 @@ public class PathMarker : MonoBehaviour
     public float moveSpeed = 2f; // prêdkoœæ w jednostkach/sekundê
     private LineRenderer lineRenderer;
     private Renderer rend;
+    private List<Node> pathNodes;
 
     void Awake()
     {
         rend = GetComponent<Renderer>();
     }
 
-    public void StartMoving(LineRenderer pathLine)
+    public void StartMoving(LineRenderer pathLine, List<Node> fullPath)
     {
-        if (pathLine == null || pathLine.positionCount == 0)
+        if (pathLine == null || pathLine.positionCount == 0 || fullPath == null || fullPath.Count == 0)
             return;
 
         rend.enabled = true;
 
         lineRenderer = pathLine;
+        pathNodes = fullPath;
+
         StopAllCoroutines();
         StartCoroutine(MoveAlongPathLoop());
     }
@@ -32,17 +36,24 @@ public class PathMarker : MonoBehaviour
 
     private IEnumerator MoveAlongPathLoop()
     {
-
-        // Zbierz punkty z linii
-        Vector3[] points = new Vector3[lineRenderer.positionCount];
-        lineRenderer.GetPositions(points);
-
-        while (true) // Pêtla nieskoñczona
+        while (true)
         {
-            for (int i = 0; i < points.Length - 1; i++)
+            for (int i = 0; i < pathNodes.Count - 1; i++)
             {
-                Vector3 startPos = points[i];
-                Vector3 endPos = points[i + 1];
+                Node currentNode = pathNodes[i];
+                Node nextNode = pathNodes[i + 1];
+
+                Vector3 startPos = currentNode.transform.position;
+                Vector3 endPos = nextNode.transform.position;
+
+                bool isGhost = currentNode.ghostNeighbors.Contains(nextNode);
+
+                if (isGhost)
+                {
+                    transform.position = endPos;
+                    yield return null;
+                    continue;
+                }
 
                 float t = 0f;
                 float segmentLength = Vector3.Distance(startPos, endPos);
@@ -56,8 +67,7 @@ public class PathMarker : MonoBehaviour
                 }
             }
 
-            // Po dojœciu do koñca wróæ na start
-            transform.position = points[0];
+            transform.position = pathNodes[0].transform.position;
         }
     }
 }

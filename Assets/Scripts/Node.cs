@@ -9,6 +9,8 @@ public class Node : MonoBehaviour
 {
     [Tooltip("S¹siednie wêz³y, z którymi ten node jest po³¹czony")]
     public List<Node> neighbors = new List<Node>();
+    [Tooltip("Po³¹czenia niewidoczne wizualnie")]
+    public List<Node> ghostNeighbors = new List<Node>();
     [Tooltip("Przypisane wyjœcie awaryjne")]
     public Node emergencyExit;
     [Header("Building")]

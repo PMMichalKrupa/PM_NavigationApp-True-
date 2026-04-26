@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class SimplePathfinder : MonoBehaviour
@@ -7,6 +8,7 @@ public class SimplePathfinder : MonoBehaviour
     public Node targetNode; //Przechowuje node na którym kończy się trasa
     public PathMarker marker;
     public LineRenderer lineRenderer;
+    private List<LineRenderer> extraLines = new List<LineRenderer>();
     public Node ResolveExit(Node start, Node target)
     {
         if (start.buildingID == target.buildingID)
@@ -115,7 +117,7 @@ public class SimplePathfinder : MonoBehaviour
             UnityEngine.SceneManagement.SceneManager.LoadScene(scene);
             return;
         }
-        if (PlayerPrefs.HasKey("SavedRealStartNode"))
+        if (!PlayerPrefs.HasKey("SceneTransition") && PlayerPrefs.HasKey("SavedRealStartNode"))
         {
             string realStart = PlayerPrefs.GetString("SavedRealStartNode");
             startNode = FindNodeByName(realStart);
@@ -252,7 +254,7 @@ public class SimplePathfinder : MonoBehaviour
             if (visualMode == PathVisualMode.LineWithMarker)
             {
                 marker.gameObject.SetActive(true);
-                marker.StartMoving(lineRenderer);
+                marker.StartMoving(lineRenderer, pathToStairs);
             }
             else
             {
@@ -266,7 +268,10 @@ public class SimplePathfinder : MonoBehaviour
             connection = stairsToNext.connections[0];
 
         if (connection != null)
+        {
             PlayerPrefs.SetString("NextStartNode", connection.targetNodeName);
+            PlayerPrefs.SetString("NextStartScene", connection.targetScene);
+        }
 
         //  Zapisujemy informacje o finalnym celu
         if (targetNode != null)
@@ -281,12 +286,23 @@ public class SimplePathfinder : MonoBehaviour
     }
     void DrawLine(List<Node> path)
     {
-        lineRenderer.positionCount = path.Count;
+        ClearExtraLines();
 
-        for (int i = 0; i < path.Count; i++)
+        List<List<Node>> segments = SplitPathByGhosts(path);
+
+        for (int s = 0; s < segments.Count; s++)
         {
-            lineRenderer.SetPosition(i,
-                path[i].transform.position + Vector3.up * 0.2f);
+            LineRenderer lr = (s == 0) ? lineRenderer : CreateExtraLine();
+
+            List<Node> segment = segments[s];
+
+            lr.positionCount = segment.Count;
+
+            for (int i = 0; i < segment.Count; i++)
+            {
+                lr.SetPosition(i,
+                    segment[i].transform.position + Vector3.up * 0.2f);
+            }
         }
     }
     string GetTargetSceneName()
@@ -352,7 +368,7 @@ public class SimplePathfinder : MonoBehaviour
             if (visualMode == PathVisualMode.LineWithMarker)
             {
                 marker.gameObject.SetActive(true);
-                marker.StartMoving(lineRenderer);
+                marker.StartMoving(lineRenderer, path);
             }
             else
             {
@@ -461,7 +477,17 @@ public class SimplePathfinder : MonoBehaviour
         }
 
         // Szukanie node'ów uwzględniając scenę
-        startNode = FindNodeByName(selected.startNode, selected.startScene);
+        if (PlayerPrefs.HasKey("NextStartNode") && PlayerPrefs.HasKey("NextStartScene"))
+        {
+            string savedStartName = PlayerPrefs.GetString("NextStartNode");
+            string savedStartScene = PlayerPrefs.GetString("NextStartScene");
+
+            startNode = FindNodeByName(savedStartName, savedStartScene);
+        }
+        else
+        {
+            startNode = FindNodeByName(selected.startNode, selected.startScene);
+        }
         if (selected.startScene == selected.endScene)
         {
             targetNode = FindNodeByName(selected.endNode, selected.endScene);
@@ -648,5 +674,60 @@ public class SimplePathfinder : MonoBehaviour
         }
 
         return null;
+    }
+    List<List<Node>> SplitPathByGhosts(List<Node> path)
+    {
+        List<List<Node>> segments = new List<List<Node>>();
+        List<Node> currentSegment = new List<Node>();
+
+        currentSegment.Add(path[0]);
+
+        for (int i = 1; i < path.Count; i++)
+        {
+            Node previous = path[i - 1];
+            Node current = path[i];
+
+            bool isGhost = previous.ghostNeighbors.Contains(current);
+
+            if (isGhost)
+            {
+                segments.Add(new List<Node>(currentSegment));
+                currentSegment.Clear();
+            }
+
+            currentSegment.Add(current);
+        }
+
+        if (currentSegment.Count > 0)
+            segments.Add(currentSegment);
+
+        return segments;
+    }
+    LineRenderer CreateExtraLine()
+    {
+        GameObject obj = new GameObject("PathSegment");
+        obj.transform.SetParent(transform);
+
+        LineRenderer lr = obj.AddComponent<LineRenderer>();
+
+        lr.material = lineRenderer.material;
+        lr.startWidth = lineRenderer.startWidth;
+        lr.endWidth = lineRenderer.endWidth;
+        lr.startColor = lineRenderer.startColor;
+        lr.endColor = lineRenderer.endColor;
+
+        extraLines.Add(lr);
+
+        return lr;
+    }
+    void ClearExtraLines()
+    {
+        foreach (var lr in extraLines)
+        {
+            if (lr != null)
+                Destroy(lr.gameObject);
+        }
+
+        extraLines.Clear();
     }
 }

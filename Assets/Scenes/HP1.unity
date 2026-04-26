@@ -7249,11 +7249,11 @@ PrefabInstance:
     - target: {fileID: 8769769565017852667, guid: 48eb4a6fc41f6ac46ae3a07832d6bf75, type: 3}
       propertyPath: startNode
       value: 
-      objectReference: {fileID: 678040574}
+      objectReference: {fileID: 0}
     - target: {fileID: 8769769565017852667, guid: 48eb4a6fc41f6ac46ae3a07832d6bf75, type: 3}
       propertyPath: targetNode
       value: 
-      objectReference: {fileID: 1405944398}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
