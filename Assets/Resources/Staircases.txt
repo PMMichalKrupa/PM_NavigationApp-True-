@@ -5,3 +5,10 @@ NW		WCh0StairNW		WCh1StairNW			WCh2StairNW
 Central		WCh0StairCentral	WCh1StairCentralDown/Up		WCh2StairCentralDown/Up
 Main		WCh0StairMain		WCh1StairMainDown/Up		WCh2StairMainDown/Up
 NE		WCh0StairNE		WCh1StairNE			WCh2StairNE
+Small		---			WCh1StairSmall			WCh2StairSmall
+
+
+Staircase ID	HPP0		HPP1			HPP2			HPP3			HPP4			HPP5
+-------------------------------------------------------------------------------------------------------------------------------------
+HPMain		HP0MainStairs	HP1MainStairsUp/Down	HP2MainStairsUp/Down	HP3MainStairsUp/Down	HP4MainStairsUp/Down	HP4MainStairsDown
+HPN		HP0NStairs	HP1NStairsUp/Down	HP2NStairsUp/Down	HP3NStairsUp/Down	HP4NStairsUp/Down	HP4NStairsDown

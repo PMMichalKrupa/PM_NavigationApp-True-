@@ -312,14 +312,13 @@ public class UIPathSelector : MonoBehaviour
             startNodeReal.sceneName,
             endNodeData.sceneName,
             System.StringComparison.OrdinalIgnoreCase);
-
             if (!sameScene || !sameBuilding)
             {
                 Node transitionNode;
 
                 if (!sameBuilding)
                 {
-                    transitionNode = startNodeReal.emergencyExit;
+                    transitionNode = startNodeReal.normalExit;
                     PlayerPrefs.SetString("TransitionType", "Building");
                 }
                 else
@@ -350,18 +349,27 @@ public class UIPathSelector : MonoBehaviour
                     ui.Show(endNodeData.sceneName, transitionNode.name);
                 }
 
-                FloorConnection connection = transitionNode.connections
-                .Find(c => c.targetScene == endNodeData.sceneName);
-
-                if (connection != null)
+                if (!sameBuilding)
                 {
-                    PlayerPrefs.SetString("NextStartNode", connection.targetNodeName);
-                    PlayerPrefs.SetString("NextStartScene", connection.targetScene);
+                    PlayerPrefs.SetString("NextStartNode", "");
+                    PlayerPrefs.SetString("NextStartScene", endNodeData.sceneName);
                 }
                 else
                 {
-                    Debug.LogWarning("Brak connection dla schodów!");
+                    FloorConnection connection = transitionNode.connections
+                        .Find(c => c.targetScene == endNodeData.sceneName);
+
+                    if (connection != null)
+                    {
+                        PlayerPrefs.SetString("NextStartNode", connection.targetNodeName);
+                        PlayerPrefs.SetString("NextStartScene", connection.targetScene);
+                    }
+                    else
+                    {
+                        Debug.LogWarning("Brak connection dla schodów!");
+                    }
                 }
+
                 PlayerPrefs.SetString("SavedUIStartNode", chosenStart.nodeName);
                 PlayerPrefs.SetString("FinalTargetNode", endNodeData.nodeName);
                 PlayerPrefs.SetString("FinalTargetScene", endNodeData.sceneName);

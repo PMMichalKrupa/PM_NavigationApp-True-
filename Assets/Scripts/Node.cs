@@ -11,6 +11,8 @@ public class Node : MonoBehaviour
     public List<Node> neighbors = new List<Node>();
     [Tooltip("Po³¹czenia niewidoczne wizualnie")]
     public List<Node> ghostNeighbors = new List<Node>();
+    [Tooltip("Przypisane zwyk³e wyjœcie miêdzy budynkami")]
+    public Node normalExit;
     [Tooltip("Przypisane wyjœcie awaryjne")]
     public Node emergencyExit;
     [Header("Building")]

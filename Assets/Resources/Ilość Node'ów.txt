@@ -1,0 +1,15 @@
+Ilość Node'ów:
+
+HP1:			 47
+HPP0:			 67
+HPP1:			 48
+HPP2:			 63
+HPP3:			 56
+HPP4:			 50
+HPP5:			 38
+SzczerbcowaParter:	 23
+SzczerbcowaPietro:	 29
+WCh0:			188
+WChP1:			205
+WChP2:			200
+Razem:			1014

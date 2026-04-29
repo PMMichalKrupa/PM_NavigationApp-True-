@@ -15,11 +15,26 @@ EditorBuildSettings:
     path: Assets/Scenes/HP1.unity
     guid: 4b77fdb10b6903b4ab0c914d32844053
   - enabled: 1
+    path: Assets/Scenes/HPP0.unity
+    guid: b2928682b8a1faf45a3eb539c500387a
+  - enabled: 1
+    path: Assets/Scenes/HPP1.unity
+    guid: c88f473e7fe9e9e4f8f233c7cdb9358e
+  - enabled: 1
+    path: Assets/Scenes/HPP2.unity
+    guid: d14c06c4dff8b8c4292bee33f520d8d6
+  - enabled: 1
+    path: Assets/Scenes/HPP3.unity
+    guid: aab5677d61933bc42af837fb08349813
+  - enabled: 1
+    path: Assets/Scenes/HPP4.unity
+    guid: a210c91484129d045b9e9397517607d2
+  - enabled: 1
+    path: Assets/Scenes/HPP5.unity
+    guid: b9d93fddab3506d4881af95c4fdb3629
+  - enabled: 1
     path: Assets/Scenes/WCh0.unity
     guid: 36ed63c78296b1442b58e6db2ead6202
-  - enabled: 1
-    path: Assets/Scenes/WCh1.unity
-    guid: e24f70c03a0f4eb4f91112da6bf95d9e
   - enabled: 1
     path: Assets/Scenes/WChP1.unity
     guid: 642015cf16495cb4ca27e36342966c05

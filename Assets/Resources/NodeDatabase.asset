@@ -13,253 +13,1689 @@ MonoBehaviour:
   m_Name: NodeDatabase
   m_EditorClassIdentifier: Assembly-CSharp::NodeDatabase
   nodes:
-  - nodeName: 013d (3)
+  - nodeName: HP1sub024i
     sceneName: HP1
-    buildingID: 1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1sub013
+    sceneName: HP1
+    buildingID: 2
     showInUI: 1
-  - nodeName: 020c (1)
+  - nodeName: HP1sub010c
     sceneName: HP1
-    buildingID: 1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1subBasementStairsc2
+    sceneName: HP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1sub015
+    sceneName: HP1
+    buildingID: 2
     showInUI: 1
-  - nodeName: 010c
+  - nodeName: HP1sub018Ac
     sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 0
-  - nodeName: 013c
+  - nodeName: HP1sub019
     sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 015d
-    sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 1
-  - nodeName: 018c
+  - nodeName: HP1sub016c
     sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 0
-  - nodeName: 08ic2
+  - nodeName: HP1subEStairsc2
     sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 0
-  - nodeName: 019d
+  - nodeName: HP1sub018A
     sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 1
-  - nodeName: 016c
+  - nodeName: HP1sub09c1
     sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 0
-  - nodeName: 04c1 (3)
+  - nodeName: HP1sub08
     sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 024c
-    sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 018Ad
-    sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 1
-  - nodeName: 020c1 (1)
+  - nodeName: HP1subHallPoint1
     sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 0
-  - nodeName: 09c
+  - nodeName: HP1sub023c
     sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 0
-  - nodeName: 08d
+  - nodeName: HP1sub09c2
     sceneName: HP1
-    buildingID: 1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1sub013c
+    sceneName: HP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1sub07c
+    sceneName: HP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1sub010
+    sceneName: HP1
+    buildingID: 2
     showInUI: 1
-  - nodeName: 011c (1)
+  - nodeName: HP1sub06c
     sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 0
-  - nodeName: 020c
+  - nodeName: HP1subNStairsUpc
     sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 0
-  - nodeName: 027c
+  - nodeName: HP1sub07
     sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: SEd
-    sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 08c
-    sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 023c
-    sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 020d
-    sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 1
-  - nodeName: 08ic
+  - nodeName: HP1subEStairs
     sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 013d (2)
-    sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 07c
-    sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 010d
-    sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 1
-  - nodeName: 06c
+  - nodeName: HP1sub017
     sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: SEc
-    sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 07d
-    sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 1
-  - nodeName: EStairs
+  - nodeName: HP1sub023
     sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 1
-  - nodeName: 017d
+  - nodeName: HP1sub015c
     sceneName: HP1
-    buildingID: 1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1subBasementStairsc
+    sceneName: HP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1subEStairsc1
+    sceneName: HP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1subNStairsUp
+    sceneName: HP1
+    buildingID: 2
     showInUI: 1
-  - nodeName: 023d
+  - nodeName: HP1subEStairsc3
     sceneName: HP1
-    buildingID: 1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1sub022c
+    sceneName: HP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1sub011c
+    sceneName: HP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1sub05c
+    sceneName: HP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1sub09
+    sceneName: HP1
+    buildingID: 2
     showInUI: 1
-  - nodeName: 04c1
+  - nodeName: HP1subBasementStairs
     sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 015c
-    sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 013d (1)
-    sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 04c1 (4)
-    sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: S stairs
-    sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 1
-  - nodeName: 04c1 (1)
+  - nodeName: HP1sub012
     sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 04c1 (2)
-    sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 022c
-    sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 08ic (3)
-    sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 1
-  - nodeName: 011c
+  - nodeName: HP1sub022
     sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 09d
-    sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 1
-  - nodeName: 022d (1)
+  - nodeName: HP1sub04
     sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 1
-  - nodeName: WStairs
+  - nodeName: HP1sub019c
     sceneName: HP1
-    buildingID: 1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1sub025
+    sceneName: HP1
+    buildingID: 2
     showInUI: 1
-  - nodeName: 012d
+  - nodeName: HP1sub012c
     sceneName: HP1
-    buildingID: 1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1sub011
+    sceneName: HP1
+    buildingID: 2
     showInUI: 1
-  - nodeName: 027d
+  - nodeName: HP1sub06
     sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 1
-  - nodeName: 022d
+  - nodeName: HP1sub04c
     sceneName: HP1
-    buildingID: 1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1sub05
+    sceneName: HP1
+    buildingID: 2
     showInUI: 1
-  - nodeName: 021c
+  - nodeName: HP1sub024
     sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 04d
-    sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 1
-  - nodeName: 019c
+  - nodeName: HP1subHallPoint2
     sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 0
-  - nodeName: 08ic (2)
+  - nodeName: HP1sub016
     sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 012c
-    sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 011d
-    sceneName: HP1
-    buildingID: 1
+    buildingID: 2
     showInUI: 1
-  - nodeName: 06d
-    sceneName: HP1
-    buildingID: 1
+  - nodeName: HP14v2c
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HPMainHall7
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HPSideEntrance
+    sceneName: HPP0
+    buildingID: 2
     showInUI: 1
-  - nodeName: 013d
-    sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: SEc1
-    sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 04c
-    sceneName: HP1
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 024d
-    sceneName: HP1
-    buildingID: 1
+  - nodeName: HP26
+    sceneName: HPP0
+    buildingID: 2
     showInUI: 1
-  - nodeName: 020c1
-    sceneName: HP1
-    buildingID: 1
+  - nodeName: HP16
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP6
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP14c
+    sceneName: HPP0
+    buildingID: 2
     showInUI: 0
-  - nodeName: 012c (1)
-    sceneName: HP1
-    buildingID: 1
+  - nodeName: HP15B
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HPMainHall4
+    sceneName: HPP0
+    buildingID: 2
     showInUI: 0
-  - nodeName: 016d
-    sceneName: HP1
-    buildingID: 1
+  - nodeName: HP17c2
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HPMainHall3
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP0NStairsUpc
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP0BasementEntrance
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP20
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP20c
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP27c
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP23
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP11
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HPMainEntrance
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP17
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HPMainEntranceinterior
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HPBufet
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP0MainStairs
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HPMainHall1
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP15Bc
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP18
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP22
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HPBufetc
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP0NStairsUp
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP10c
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP21c
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP26c
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP0MainStairsc
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP19A
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: Hp12
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP15A
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HPRearEntrancec
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP22c
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP17c
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP11c
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP15Bc3
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HPMainHall2
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP15sideroom
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP9
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP14
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP9c
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP14v2
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP27
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP23c
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP10
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HPSideHall1
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP21
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP18c
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HPMainHall5
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HPMainHall6
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HPSideHall2
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP8
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HPSideEntrancec
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HPMainEntranceinteriorc
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP15C
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HPMainHall8
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP15Cc
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP0NStairsDown
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP6c
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP0NStairsDownc
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP15Bc2
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HPRearEntrance
+    sceneName: HPP0
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP110
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP110c
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP104c
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1MainStairsDownc
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1Hallpoint1
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP105
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP107
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP106c
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP114A
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP103c
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP115c
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1NStairsDown
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP119c
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP112c
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP107c
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1NStairsUp
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP114
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP115A
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP111A
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP1Hallpoint3
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP104
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP1MainStairsDown
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP109
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP105c
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP113
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP111
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP1MainStairs
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP109c
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1NStairs
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1NStairsUpc
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP106A
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP113c2
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1MainStairsUp
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP1MainStairsUpc
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP113c
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP106
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP108c
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP112
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP106Ac
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP119
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP108
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP114c
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP115Ac
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP111c
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP115
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP1NStairsDownc
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP1Hallpoint2
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP103
+    sceneName: HPP1
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP223c
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP210
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP208c
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP209
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP232
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP206B
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP218
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP224c
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP209c2
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP2Hallpoint2
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP221c
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP2NStairsDown
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP227Ac
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP2Hallpoint3
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP2MainStairsUp
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP219
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP2MainStairsDownc
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP207c
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP208
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP2NStairsDownc
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP227Av2
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP216c
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP213
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP203v2c
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP208c2
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP222
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP222c
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP205Ac
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP205c
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP203v2
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP225c
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP205
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP215
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP2NStairsUp
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP224
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP204c
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP204
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP219c
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP203
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP2Hallpoint1
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP216c2
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP223
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP206A
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP2NStairsUpc
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP205A
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP2NStairs
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP221
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP227A
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP227Av2c
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP2Hallpoint4
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP225c2
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP2MainStairs
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP213c
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP211
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP209c
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP2MainStairsUpc
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP216
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP209i
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP206Ac
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP2MainStairsDown
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP207
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP203c
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP225
+    sceneName: HPP2
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP314
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP307c
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP305
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP310
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP3NStairDown
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP315c
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP3NStairDownc
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP306c
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP304c
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP3MainStairsUpc
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP2Hallpoint1
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP320
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP315
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP3NStair
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP308
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP319
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP309
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP324c
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP338
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP3MainStairs
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP313
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP324
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP316
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP312c
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP321i
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP336c
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP321
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP310c
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP2Hallpoint2
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP317
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP303c
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP318c
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP307
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP3NStairUpc
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP338c
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP322c
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP3MainStairsDownc
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP303v2
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP3MainStairsUp
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP308c
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP3NStairUp
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP318
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP306
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP319c
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP322
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP303v2c
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP3MainStairsDown
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP312
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP321c
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP313c
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP317c
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP304
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP305c
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP336
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP309c
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP303
+    sceneName: HPP3
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP420c2
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP4MainStairsUpc
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP404c
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP404
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP4HallPoint1
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP4NStairsDownc
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP403
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP420
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP4MainStairsUp
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP407c
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP424
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP422c
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP410c
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP409c
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP406
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP409
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP422
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP406c
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP413
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP415
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP405
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP4NStairsUp
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP418c
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP424c
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP4NStairs
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP412c
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP4NStairsc
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP415c
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP403c
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP414
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP4HallPoint2
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP403v2c
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP419
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP4MainStairsDown
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP413c
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP4MainStairs
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP414c
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP417
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP410
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP417c
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP4MainStairsDownc
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP416
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP412
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP418
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP420c
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP405c
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP4NStairsDown
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP407
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP4NStairsUpc
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP403v2
+    sceneName: HPP4
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP502
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP5MainStairsDownc
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP517
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP507c
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP5Hallpoint2
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP513v2
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP511
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP5MainStairsDown
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP513
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP5NStairsc
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP5NStairs
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP5MainStairs
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP503Ac
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP503c
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP510c
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP5NStairsDownc
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP509
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP512
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP510
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP5Hallpoint1
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP507
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP513c
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP504
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP513v2c
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP509c
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP505
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP503A
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP505c
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP511c
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP503
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP506
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP506c
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP5NStairsDown
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP5MainStairsc
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP501
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP511c2
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 0
+  - nodeName: HP508
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 1
+  - nodeName: HP504c
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 0
+  - nodeName: SzczSzatnia
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 1
+  - nodeName: Szcz12Ac
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 0
+  - nodeName: SzczSzatniac3
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 0
+  - nodeName: SzczMainEntrancec2
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 0
+  - nodeName: SzczNStairc
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 0
+  - nodeName: SzczMainEntrance
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 1
+  - nodeName: SzczMainEntrancec3
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 0
+  - nodeName: SzczStairEntrancec2
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 0
+  - nodeName: Szcz12Cc
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 0
+  - nodeName: SzczMainEntrancec1
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 0
+  - nodeName: SzczSzatniac1
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 0
+  - nodeName: Szcz12B
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 1
+  - nodeName: SzczNStairBase
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 1
+  - nodeName: Szcz12A
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 1
+  - nodeName: SzczSEStairBasec
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 0
+  - nodeName: SzczSzatniac2
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 0
+  - nodeName: SzczSEStairBase
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 1
+  - nodeName: SzczStairEntrancec3
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 0
+  - nodeName: Szcz12Bc
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 0
+  - nodeName: SzczMiddleEntrance
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 1
+  - nodeName: SzczStairEntrance
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 1
+  - nodeName: Szcz12C
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 1
+  - nodeName: SzczStairEntrancec1
+    sceneName: SzczerbcowaParter
+    buildingID: 3
+    showInUI: 0
+  - nodeName: Szcz5
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 1
+  - nodeName: Szcz5v2c
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 0
+  - nodeName: Szcz7v2
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 1
+  - nodeName: SzczSEStair
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 1
+  - nodeName: SzczSWExit2
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 0
+  - nodeName: Szcz4
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 1
+  - nodeName: Szcz5c
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 0
+  - nodeName: Szcz8c2
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 0
+  - nodeName: SzczSEStair2
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 0
+  - nodeName: Szcz8
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 1
+  - nodeName: Szcz7v2c
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 0
+  - nodeName: SzczStolowkac
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 0
+  - nodeName: Szcz5v2
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 1
+  - nodeName: Szcz6v2c
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 0
+  - nodeName: Szcz8c
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 0
+  - nodeName: Szcz1
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 1
+  - nodeName: SzczStolowka
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 1
+  - nodeName: Szcz7
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 1
+  - nodeName: Szcz9c
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 0
+  - nodeName: Szcz6c
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 0
+  - nodeName: SzczSWExit
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 1
+  - nodeName: Szcz4A
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 1
+  - nodeName: Szcz7c
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 0
+  - nodeName: Szcz9
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 1
+  - nodeName: Szcz6v2
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 1
+  - nodeName: Szcz6
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 1
+  - nodeName: Szcz1c
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 0
+  - nodeName: SzczSEStair3
+    sceneName: SzczerbcowaPietro
+    buildingID: 
+    showInUI: 0
+  - nodeName: SzczNStair
+    sceneName: SzczerbcowaPietro
+    buildingID: 
     showInUI: 1
   - nodeName: WCh19
     sceneName: WCh0
@@ -293,10 +1729,14 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: 79
+  - nodeName: WCh62Stair
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
+  - nodeName: WCh78Ac
+    sceneName: WCh0
+    buildingID: 1
+    showInUI: 0
   - nodeName: WChSWExit
     sceneName: WCh0
     buildingID: 1
@@ -313,7 +1753,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 65
+  - nodeName: WCh62Stairc
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -325,7 +1765,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 84
+  - nodeName: WCh0StairGrandc
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -341,15 +1781,15 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: 126
+  - nodeName: WCh25c
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 1E
+  - nodeName: WCh0StairCentralc2
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 10E
+  - nodeName: WCh0StairMainc
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -369,15 +1809,15 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: 36
+  - nodeName: WCh54c
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 73
+  - nodeName: WCh55v2
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: E
+  - nodeName: WCh0MainBasementStairs
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
@@ -385,7 +1825,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 11B
+  - nodeName: WChEExitc2
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -401,10 +1841,6 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 3
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 1
   - nodeName: WCh58
     sceneName: WCh0
     buildingID: 1
@@ -414,10 +1850,6 @@ MonoBehaviour:
     buildingID: 1
     showInUI: 1
   - nodeName: WCh0StairNW
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 1
-  - nodeName: 5D
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
@@ -441,14 +1873,6 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: F
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 2
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 0
   - nodeName: WCh76
     sceneName: WCh0
     buildingID: 1
@@ -465,7 +1889,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 35
+  - nodeName: WCh54c2
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -473,7 +1897,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: D
+  - nodeName: WCh0MainBasementStairsc
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -489,7 +1913,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: 123
+  - nodeName: WCh28c3
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -501,7 +1925,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: 30
+  - nodeName: WCh7c2
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -509,7 +1933,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: 124
+  - nodeName: WChNEExitc
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -533,10 +1957,6 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: 112
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 0
   - nodeName: WCh31
     sceneName: WCh0
     buildingID: 1
@@ -557,11 +1977,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: 1E (1)
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 5E
+  - nodeName: WCh0StairCentralc
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -573,7 +1989,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: 11A
+  - nodeName: WCh22c2
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -581,22 +1997,10 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: 5C
+  - nodeName: WCh57c
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 85
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 31
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 83
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 1
   - nodeName: WCh6c
     sceneName: WCh0
     buildingID: 1
@@ -629,14 +2033,10 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 72
+  - nodeName: WCh55v2c
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 12F
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 1
   - nodeName: WCh38c
     sceneName: WCh0
     buildingID: 1
@@ -669,10 +2069,6 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 86
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 1
   - nodeName: WCh66
     sceneName: WCh0
     buildingID: 1
@@ -685,26 +2081,14 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: 64
+  - nodeName: WCh69c2
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 114
+  - nodeName: WCh17c2
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 9C
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 1
-  - nodeName: 10
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 1
-  - nodeName: 28
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 1
   - nodeName: WCh74
     sceneName: WCh0
     buildingID: 1
@@ -721,11 +2105,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 44
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 95
+  - nodeName: WCh34Ac2
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -741,14 +2121,6 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: WCh25c
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 9B
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 0
   - nodeName: WCh40
     sceneName: WCh0
     buildingID: 1
@@ -757,7 +2129,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 3A
+  - nodeName: WChP0MidCorridorStair
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
@@ -765,11 +2137,11 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 78
+  - nodeName: WCh65Stair
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: 11F
+  - nodeName: WCh24c2
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -777,7 +2149,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 11C
+  - nodeName: WChEExit
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
@@ -793,15 +2165,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: 89
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 1
   - nodeName: WCh35c
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 48
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -809,7 +2173,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: 1
+  - nodeName: Main Entrancec
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -821,7 +2185,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 61
+  - nodeName: WCh62Stairc2
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -829,11 +2193,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: 27
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 12A
+  - nodeName: WCh0StairNEc
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -841,7 +2201,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: 113
+  - nodeName: WCh16c3
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -849,10 +2209,6 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 10D
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 1
   - nodeName: WCh67c
     sceneName: WCh0
     buildingID: 1
@@ -861,11 +2217,15 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
+  - nodeName: WCh36Ac
+    sceneName: WCh0
+    buildingID: 1
+    showInUI: 0
   - nodeName: WCh46c
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 7
+  - nodeName: WCh16c2
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -877,7 +2237,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: 10B
+  - nodeName: WCh34c2
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -909,15 +2269,11 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: 33
+  - nodeName: WCh56c
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 4D
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 71
+  - nodeName: WCh65Stairc
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -933,7 +2289,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 128A
+  - nodeName: WCh28c2
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -941,7 +2297,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 115
+  - nodeName: WCh18c2
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -985,10 +2341,6 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 8F
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 1
   - nodeName: WCh71c
     sceneName: WCh0
     buildingID: 1
@@ -997,7 +2349,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: 121
+  - nodeName: WChEExitc
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -1017,11 +2369,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: 5B
-    sceneName: WCh0
-    buildingID: 1
-    showInUI: 0
-  - nodeName: 4
+  - nodeName: WCh70c2
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -1041,7 +2389,7 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 92
+  - nodeName: Main Entrancec2
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -1077,11 +2425,11 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 1
-  - nodeName: 39
+  - nodeName: WChP0MidCorridorStairc
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: 4C
+  - nodeName: WCh74c2
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
@@ -1097,27 +2445,11 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: Node_example 4
-    sceneName: WCh1
-    buildingID: 1
-    showInUI: 1
-  - nodeName: Node_example 2
-    sceneName: WCh1
-    buildingID: 1
-    showInUI: 1
-  - nodeName: Node_example_3
-    sceneName: WCh1
-    buildingID: 1
-    showInUI: 1
-  - nodeName: StairNode
-    sceneName: WCh1
-    buildingID: 1
-    showInUI: 1
-  - nodeName: WCh102a
+  - nodeName: WCh101
     sceneName: WChP1
     buildingID: 1
     showInUI: 1
-  - nodeName: WCh101
+  - nodeName: WCh102a
     sceneName: WChP1
     buildingID: 1
     showInUI: 1
@@ -1169,7 +2501,7 @@ MonoBehaviour:
     sceneName: WChP1
     buildingID: 1
     showInUI: 0
-  - nodeName: WCh1StairCentralUp
+  - nodeName: WCh1StairCentralDown
     sceneName: WChP1
     buildingID: 1
     showInUI: 1
@@ -1493,7 +2825,7 @@ MonoBehaviour:
     sceneName: WChP1
     buildingID: 1
     showInUI: 1
-  - nodeName: WChP1SmallStair
+  - nodeName: WCh1StairSmall
     sceneName: WChP1
     buildingID: 1
     showInUI: 1
@@ -1557,6 +2889,10 @@ MonoBehaviour:
     sceneName: WChP1
     buildingID: 1
     showInUI: 0
+  - nodeName: WCh1StairCentralUp
+    sceneName: WChP1
+    buildingID: 1
+    showInUI: 1
   - nodeName: WCh172c2
     sceneName: WChP1
     buildingID: 1
@@ -1945,11 +3281,11 @@ MonoBehaviour:
     sceneName: WChP2
     buildingID: 1
     showInUI: 1
-  - nodeName: Node_example (164)
+  - nodeName: SidePoint18
     sceneName: WChP2
     buildingID: 1
     showInUI: 0
-  - nodeName: Node_example (155)
+  - nodeName: SidePoint3
     sceneName: WChP2
     buildingID: 1
     showInUI: 0
@@ -1957,7 +3293,7 @@ MonoBehaviour:
     sceneName: WChP2
     buildingID: 1
     showInUI: 1
-  - nodeName: Node_example (154)
+  - nodeName: SidePoint2
     sceneName: WChP2
     buildingID: 1
     showInUI: 0
@@ -2045,7 +3381,7 @@ MonoBehaviour:
     sceneName: WChP2
     buildingID: 1
     showInUI: 1
-  - nodeName: Node_example (163)
+  - nodeName: SidePoint16
     sceneName: WChP2
     buildingID: 1
     showInUI: 0
@@ -2085,7 +3421,7 @@ MonoBehaviour:
     sceneName: WChP2
     buildingID: 1
     showInUI: 0
-  - nodeName: Node_example (165)
+  - nodeName: SidePoint19
     sceneName: WChP2
     buildingID: 1
     showInUI: 0
@@ -2101,7 +3437,7 @@ MonoBehaviour:
     sceneName: WChP2
     buildingID: 1
     showInUI: 0
-  - nodeName: Node_example (158)
+  - nodeName: SidePoint8
     sceneName: WChP2
     buildingID: 1
     showInUI: 0
@@ -2157,7 +3493,7 @@ MonoBehaviour:
     sceneName: WChP2
     buildingID: 1
     showInUI: 0
-  - nodeName: Node_example (161)
+  - nodeName: SidePoint14
     sceneName: WChP2
     buildingID: 1
     showInUI: 0
@@ -2165,7 +3501,7 @@ MonoBehaviour:
     sceneName: WChP2
     buildingID: 1
     showInUI: 1
-  - nodeName: Node_example (172)
+  - nodeName: SidePoint13
     sceneName: WChP2
     buildingID: 1
     showInUI: 1
@@ -2229,11 +3565,11 @@ MonoBehaviour:
     sceneName: WChP2
     buildingID: 1
     showInUI: 1
-  - nodeName: Node_example (166)
+  - nodeName: SidePoint21
     sceneName: WChP2
     buildingID: 1
     showInUI: 0
-  - nodeName: Node_example (160)
+  - nodeName: SidePoint12
     sceneName: WChP2
     buildingID: 1
     showInUI: 0
@@ -2273,7 +3609,7 @@ MonoBehaviour:
     sceneName: WChP2
     buildingID: 1
     showInUI: 1
-  - nodeName: WChP2SmallStair
+  - nodeName: WCh2StairSmall
     sceneName: WChP2
     buildingID: 1
     showInUI: 1
@@ -2293,7 +3629,7 @@ MonoBehaviour:
     sceneName: WChP2
     buildingID: 1
     showInUI: 1
-  - nodeName: Node_example (153)
+  - nodeName: SidePoint1
     sceneName: WChP2
     buildingID: 1
     showInUI: 0
@@ -2365,7 +3701,7 @@ MonoBehaviour:
     sceneName: WChP2
     buildingID: 1
     showInUI: 1
-  - nodeName: Node_example (162)
+  - nodeName: SidePoint15
     sceneName: WChP2
     buildingID: 1
     showInUI: 0
@@ -2393,11 +3729,11 @@ MonoBehaviour:
     sceneName: WChP2
     buildingID: 1
     showInUI: 1
-  - nodeName: Node_example (159)
+  - nodeName: SidePoint11
     sceneName: WChP2
     buildingID: 1
     showInUI: 0
-  - nodeName: Node_example (170)
+  - nodeName: SidePoint20
     sceneName: WChP2
     buildingID: 1
     showInUI: 1
@@ -2405,11 +3741,11 @@ MonoBehaviour:
     sceneName: WChP2
     buildingID: 1
     showInUI: 0
-  - nodeName: Node_example (157)
+  - nodeName: SidePoint6
     sceneName: WChP2
     buildingID: 1
     showInUI: 0
-  - nodeName: Node_example (171)
+  - nodeName: SidePoint17
     sceneName: WChP2
     buildingID: 1
     showInUI: 1
@@ -2473,7 +3809,7 @@ MonoBehaviour:
     sceneName: WChP2
     buildingID: 1
     showInUI: 0
-  - nodeName: Node_example (174)
+  - nodeName: SidePoint9
     sceneName: WChP2
     buildingID: 1
     showInUI: 1
@@ -2553,7 +3889,7 @@ MonoBehaviour:
     sceneName: WChP2
     buildingID: 1
     showInUI: 0
-  - nodeName: Node_example (156)
+  - nodeName: SidePoint4
     sceneName: WChP2
     buildingID: 1
     showInUI: 0
@@ -2625,7 +3961,7 @@ MonoBehaviour:
     sceneName: WChP2
     buildingID: 1
     showInUI: 1
-  - nodeName: Node_example (176)
+  - nodeName: SidePoint7
     sceneName: WChP2
     buildingID: 1
     showInUI: 1
@@ -2665,7 +4001,7 @@ MonoBehaviour:
     sceneName: WChP2
     buildingID: 1
     showInUI: 0
-  - nodeName: Node_example (173)
+  - nodeName: SidePoint10
     sceneName: WChP2
     buildingID: 1
     showInUI: 1
@@ -2673,7 +4009,7 @@ MonoBehaviour:
     sceneName: WChP2
     buildingID: 1
     showInUI: 1
-  - nodeName: Node_example (169)
+  - nodeName: SidePoint22
     sceneName: WChP2
     buildingID: 1
     showInUI: 1
@@ -2685,7 +4021,7 @@ MonoBehaviour:
     sceneName: WChP2
     buildingID: 1
     showInUI: 1
-  - nodeName: Node_example (175)
+  - nodeName: SidePoint5
     sceneName: WChP2
     buildingID: 1
     showInUI: 1
