@@ -361,8 +361,6 @@ public class SimplePathfinder : MonoBehaviour
 
         DrawLine(path);
 
-        // Kulka / marker
-
         if (marker != null)
         {
             if (visualMode == PathVisualMode.LineWithMarker)

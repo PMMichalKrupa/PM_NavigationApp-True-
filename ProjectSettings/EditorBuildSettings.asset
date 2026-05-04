@@ -33,6 +33,9 @@ EditorBuildSettings:
     path: Assets/Scenes/HPP5.unity
     guid: b9d93fddab3506d4881af95c4fdb3629
   - enabled: 1
+    path: Assets/Scenes/WCh1S.unity
+    guid: 507d3799551b9174aa7c2f8c8497f1d2
+  - enabled: 1
     path: Assets/Scenes/WCh0.unity
     guid: 36ed63c78296b1442b58e6db2ead6202
   - enabled: 1
@@ -41,6 +44,27 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WChP2.unity
     guid: 742f8212105d49f4e9922e8595a879d3
+  - enabled: 1
+    path: Assets/Scenes/WChP3.unity
+    guid: 43df9e59e6ae3fb4f90c6f0716a68bb6
+  - enabled: 1
+    path: Assets/Scenes/WChP4.unity
+    guid: 3a97dd71d3ed32b49991403391f39f98
+  - enabled: 1
+    path: Assets/Scenes/Kostka1S.unity
+    guid: d8cd33127cf76174e919844e16180def
+  - enabled: 1
+    path: Assets/Scenes/Kostka0.unity
+    guid: 784b1a1320e985d439b17a28a6add290
+  - enabled: 1
+    path: Assets/Scenes/Kostka1.unity
+    guid: 258cabc3b8e21f5469a1dce5b25bb1e8
+  - enabled: 1
+    path: Assets/Scenes/SzczerbcowaParter.unity
+    guid: 148113a0eec081b449f0b5f6704ed932
+  - enabled: 1
+    path: Assets/Scenes/SzczerbcowaPietro.unity
+    guid: 0e3a38d116af854439e56bfb8603284b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

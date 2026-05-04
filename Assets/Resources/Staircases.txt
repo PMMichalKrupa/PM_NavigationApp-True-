@@ -1,11 +1,12 @@
-Staircase ID	WCh0			WChP1				WChP2
-----------------------------------------------------------------------------------------------
-Grand		WCh0StairGrand		WCh1StairGrand			WCh2StairGrand
-NW		WCh0StairNW		WCh1StairNW			WCh2StairNW
-Central		WCh0StairCentral	WCh1StairCentralDown/Up		WCh2StairCentralDown/Up
-Main		WCh0StairMain		WCh1StairMainDown/Up		WCh2StairMainDown/Up
-NE		WCh0StairNE		WCh1StairNE			WCh2StairNE
-Small		---			WCh1StairSmall			WCh2StairSmall
+Staircase ID	WCh1Sub			WCh0			WChP1				WChP2
+-----------------------------------------------------------------------------------------------------------------------
+Grand		WCh1SubStairGrand	WCh0StairGrand		WCh1StairGrand			WCh2StairGrand
+NW		WCh1SubStairNW		WCh0StairNW		WCh1StairNW			WCh2StairNW
+Central					WCh0StairCentral	WCh1StairCentralDown/Up		WCh2StairCentralDown/Up
+Main					WCh0StairMain		WCh1StairMainDown/Up		WCh2StairMainDown/Up
+NE					WCh0StairNE		WCh1StairNE			WCh2StairNE
+Small					---			WCh1StairSmall			WCh2StairSmall
+Mid		WCh1SubStairMid		WCh0StairMid		WCh1StairMid			WCh2StairMid
 
 
 Staircase ID	HPP0		HPP1			HPP2			HPP3			HPP4			HPP5

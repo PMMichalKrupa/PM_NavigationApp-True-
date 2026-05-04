@@ -4705,6 +4705,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
+      propertyPath: showInUI
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
       propertyPath: sceneName
       value: HPP4
       objectReference: {fileID: 0}

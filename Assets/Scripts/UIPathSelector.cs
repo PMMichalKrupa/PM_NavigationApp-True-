@@ -53,7 +53,6 @@ public class UIPathSelector : MonoBehaviour
         // Przygotuj nazwy do dropdownów
         List<string> nodeNames = new List<string>();
 
-        // CUSTOM tylko dla startu
         nodeNames.Insert(0, "Wybierz salę");
         nodeNames.Insert(1, "Wybierz z planu");
 
@@ -131,7 +130,7 @@ public class UIPathSelector : MonoBehaviour
     }
     IEnumerator RestoreAfterFrame()
     {
-        yield return null; // czekamy aż UI się ustabilizuje
+        yield return null;
 
     }
     public void ToggleVisualMode()
@@ -230,7 +229,7 @@ public class UIPathSelector : MonoBehaviour
         {
             // WYJŚCIE AWARYJNE
             useEmergencyExit = true;
-            chosenEnd = null; // ALE to już nie znaczy "brak wyboru"
+            chosenEnd = null;
 
             Debug.Log("Wyjście awaryjne");
 
@@ -380,7 +379,6 @@ public class UIPathSelector : MonoBehaviour
 
                 return;
             }
-            // normalny przypadek (ta sama scena)
             finalTarget = pathfinder.FindNodeByName(
                 endNodeData.nodeName,
                 endNodeData.sceneName
@@ -389,9 +387,6 @@ public class UIPathSelector : MonoBehaviour
             if (finalTarget == null)
             {
                 Debug.LogWarning($"Target node NIE ISTNIEJE: {endNodeData.nodeName} w scenie {endNodeData.sceneName}");
-
-                // KLUCZOWA ZMIANA: nie przerywamy całego flow
-                // tylko kończymy aktualizację ścieżki
                 pathfinder.ClearPath();
                 return;
             }
@@ -433,7 +428,7 @@ public class UIPathSelector : MonoBehaviour
         if (pathfinder == null)
             return;
 
-        // START = node zapisany podczas przejścia między piętrami
+        //node zapisany podczas przejścia między piętrami
         string transitionType = PlayerPrefs.GetString("TransitionType", "");
 
         Node nextStart = null;

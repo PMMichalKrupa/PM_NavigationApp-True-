@@ -1,15 +1,29 @@
 Ilość Node'ów:
 
-HP1:			 47
-HPP0:			 67
-HPP1:			 48
-HPP2:			 63
-HPP3:			 56
-HPP4:			 50
-HPP5:			 38
-SzczerbcowaParter:	 23
-SzczerbcowaPietro:	 29
-WCh0:			188
-WChP1:			205
-WChP2:			200
-Razem:			1014
+HP -1:					  47
+HP  0:					  67
+HP  1:					  48
+HP  2:					  63
+HP  3:					  56
+HP  4:					  50
+HP  5:					  38
+Razem HP:				 369
+
+Szczerbcowa Parter:		  23
+Szczerbcowa Pietro:		  29
+Razem Szczerbcowa:		  52
+
+WCh -1:					 151
+WCh  0:					 188
+WCh  1:					 205
+WCh  2:					 200
+WCh  3:					  90
+WCh  4:					  11
+Razem WCh:				 845
+
+Kostka -1:				  21
+Kostka  0:				  13
+Kostka  1:				   6
+Kostka razem:			  40
+
+Razem:					1306
