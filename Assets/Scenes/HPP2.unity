@@ -2322,6 +2322,10 @@ PrefabInstance:
       propertyPath: emergencyExit
       value: 
       objectReference: {fileID: 2004648472}
+    - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
+      propertyPath: 'neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1581490619}
     - target: {fileID: 7868156991608158241, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
       propertyPath: m_Name
       value: HP227Av2
@@ -3914,6 +3918,10 @@ PrefabInstance:
       propertyPath: emergencyExit
       value: 
       objectReference: {fileID: 257399445}
+    - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
+      propertyPath: 'neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 208930588}
     - target: {fileID: 7868156991608158241, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
       propertyPath: m_Name
       value: HP224
@@ -5308,6 +5316,10 @@ PrefabInstance:
       propertyPath: emergencyExit
       value: 
       objectReference: {fileID: 2004648472}
+    - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
+      propertyPath: 'neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 261450122}
     - target: {fileID: 7868156991608158241, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
       propertyPath: m_Name
       value: HP227A

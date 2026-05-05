@@ -1839,6 +1839,10 @@ PrefabInstance:
       propertyPath: emergencyExit
       value: 
       objectReference: {fileID: 2008594832}
+    - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
+      propertyPath: 'neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 630131265}
     - target: {fileID: 7868156991608158241, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
       propertyPath: m_Name
       value: HP409
@@ -2295,6 +2299,10 @@ PrefabInstance:
       propertyPath: emergencyExit
       value: 
       objectReference: {fileID: 1514045271}
+    - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
+      propertyPath: 'neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1995603810}
     - target: {fileID: 7868156991608158241, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
       propertyPath: m_Name
       value: HP405

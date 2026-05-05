@@ -19,12 +19,14 @@ public class UIPathSelector : MonoBehaviour
 
     void Start()
     {
+        bool showHidden = PlayerPrefs.GetInt("ShowHiddenPoints", 0) == 1;
+        bool onlyCurrentScene = PlayerPrefs.GetInt("StartOnlyCurrentScene", 0) == 1;
+        string currentScene = SceneManager.GetActiveScene().name;
         if (instance != null && instance != this)
         {
             Destroy(transform.root.gameObject);
             return;
         }
-
         instance = this;
         DontDestroyOnLoad(transform.root.gameObject);
 
@@ -40,8 +42,14 @@ public class UIPathSelector : MonoBehaviour
             allNodes = new List<NodeData>(db.nodes);
 
             // filtr punktów ukytych
-            allNodes = allNodes.FindAll(n => n.showInUI);
-
+            if (!showHidden)
+            {
+                allNodes = allNodes.FindAll(n => n.showInUI);
+            }
+            if (onlyCurrentScene)
+            {
+                allNodes = allNodes.FindAll(n => (n.sceneName == currentScene));
+            }
             // sortowanie
             allNodes.Sort((a, b) => (a.sceneName + a.nodeName).CompareTo(b.sceneName + b.nodeName));
         }

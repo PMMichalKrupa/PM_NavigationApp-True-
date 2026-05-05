@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour
 {
@@ -12,7 +13,9 @@ public class MainMenuController : MonoBehaviour
                         ChooseBuildingMenu,
                         ChooseOptionMenu,
                         ChooseSettingsMenu,
-                        OpenSettingsButton;
+                        OpenSettingsButton,
+                        ShowHiddenPoints,
+                        ShowCurrentScenePoints;
     // Nazwa sceny
     [SerializeField] private string HenrykaPoboznego = "HPP0";
     [SerializeField] private string WalyChrobrego = "WCh0";
@@ -50,6 +53,8 @@ public class MainMenuController : MonoBehaviour
         TurnItAllOff();
         ButtonBackFromChoice.SetActive(true);
         ChooseSettingsMenu.SetActive(true);
+        ShowHiddenPoints.SetActive(true);
+        ShowCurrentScenePoints.SetActive(true);
     }
     public void ReturnToMenu()
     {
@@ -70,5 +75,31 @@ public class MainMenuController : MonoBehaviour
         OpenSettingsButton.SetActive(false);
         ChooseOptionMenu.SetActive(false);
         ChooseSettingsMenu.SetActive(false);
+        ShowHiddenPoints.SetActive(false);
+        ShowCurrentScenePoints.SetActive(false);
+    }
+    public void ToggleShowHidden(bool value1)
+    {
+        PlayerPrefs.SetInt("ShowHiddenPoints", value1 ? 1 : 0);
+        PlayerPrefs.Save();
+    }
+    public void OnCurrentFloorOnlyToggle(bool value2)
+    {
+        PlayerPrefs.SetInt("StartOnlyCurrentScene", value2 ? 1 : 0);
+        PlayerPrefs.Save();
+    }
+
+    void Start()
+    {
+        LoadToggleStates();
+    }
+
+    void LoadToggleStates()
+    {
+        ShowHiddenPoints.GetComponent<Toggle>().isOn =
+            PlayerPrefs.GetInt("ShowHiddenPoints", 0) == 1;
+
+        ShowCurrentScenePoints.GetComponent<Toggle>().isOn =
+            PlayerPrefs.GetInt("StartOnlyCurrentScene", 0) == 1;
     }
 }

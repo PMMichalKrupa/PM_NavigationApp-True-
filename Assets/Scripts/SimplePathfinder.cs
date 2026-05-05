@@ -168,6 +168,25 @@ public class SimplePathfinder : MonoBehaviour
             }
             lineRenderer.positionCount = 0;
         }
+        if (startNode == null)
+        {
+            Debug.Log(" startNode == null -> próbuję fallback przez target");
+
+            string targetName = PlayerPrefs.GetString("FinalTargetNode", "");
+            string targetScene = PlayerPrefs.GetString("FinalTargetScene", "");
+
+            Node targetInScene = FindNodeByName(targetName, targetScene);
+
+            if (targetInScene != null && targetInScene.normalExit != null)
+            {
+                startNode = targetInScene.normalExit;
+                Debug.Log($"Fallback startNode ustawiony na: {startNode.name}");
+            }
+            else
+            {
+                Debug.Log("Nie udało się ustawić fallback startNode");
+            }
+        }
         if (startNode != null && targetNode != null)
         {
             DrawPath();

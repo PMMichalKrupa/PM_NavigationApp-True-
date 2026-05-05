@@ -46,8 +46,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Node
   neighbors:
   - {fileID: 0}
+  ghostNeighbors: []
+  normalExit: {fileID: 0}
   emergencyExit: {fileID: 7537155930703865888}
+  buildingID: 
+  showInUI: 1
   isStairs: 0
-  linkedNodeName: 
-  targetScene: 
+  staircaseID: 
+  connections: []
   sceneName: 

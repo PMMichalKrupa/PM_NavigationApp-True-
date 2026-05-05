@@ -2931,6 +2931,10 @@ PrefabInstance:
       propertyPath: normalExit
       value: 
       objectReference: {fileID: 471421335}
+    - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
+      propertyPath: 'neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1935403409}
     - target: {fileID: 7868156991608158241, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
       propertyPath: m_Name
       value: HP502
@@ -2940,6 +2944,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
+--- !u!114 &1285493949 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
+  m_PrefabInstance: {fileID: 1285493948}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5db19a4ddad767e4585dd2c51e24ee92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Node
 --- !u!1001 &1325712772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3723,9 +3738,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 471421335}
     - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
+      propertyPath: neighbors.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
       propertyPath: 'neighbors.Array.data[0]'
       value: 
       objectReference: {fileID: 760536377}
+    - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
+      propertyPath: 'neighbors.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1285493949}
     - target: {fileID: 7868156991608158241, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
       propertyPath: m_Name
       value: HP503
