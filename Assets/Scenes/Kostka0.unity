@@ -168,6 +168,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
+      propertyPath: isStairs
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
       propertyPath: sceneName
       value: Kostka0
       objectReference: {fileID: 0}
@@ -179,6 +183,10 @@ PrefabInstance:
       propertyPath: normalExit
       value: 
       objectReference: {fileID: 1567503328}
+    - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
+      propertyPath: staircaseID
+      value: Kostka
+      objectReference: {fileID: 0}
     - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
       propertyPath: emergencyExit
       value: 
@@ -1835,7 +1843,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6110098819471644221, guid: 02af2889b76db6749a7eecd1eacf6ca4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6715723104125072041, guid: 02af2889b76db6749a7eecd1eacf6ca4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1942,6 +1950,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
+      propertyPath: isStairs
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
       propertyPath: sceneName
       value: Kostka0
       objectReference: {fileID: 0}
@@ -1953,6 +1965,10 @@ PrefabInstance:
       propertyPath: normalExit
       value: 
       objectReference: {fileID: 1567503328}
+    - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
+      propertyPath: staircaseID
+      value: Kostka
+      objectReference: {fileID: 0}
     - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
       propertyPath: connections.Array.size
       value: 1

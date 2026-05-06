@@ -1337,10 +1337,6 @@ MonoBehaviour:
     sceneName: HPP4
     buildingID: 2
     showInUI: 1
-  - nodeName: HP502
-    sceneName: HPP5
-    buildingID: 2
-    showInUI: 1
   - nodeName: HP5MainStairsDownc
     sceneName: HPP5
     buildingID: 2
@@ -1433,6 +1429,10 @@ MonoBehaviour:
     sceneName: HPP5
     buildingID: 2
     showInUI: 0
+  - nodeName: HP502
+    sceneName: HPP5
+    buildingID: 2
+    showInUI: 1
   - nodeName: HP509c
     sceneName: HPP5
     buildingID: 2
@@ -3209,11 +3209,11 @@ MonoBehaviour:
     sceneName: WCh0
     buildingID: 1
     showInUI: 0
-  - nodeName: WCh102a
+  - nodeName: WCh101
     sceneName: WChP1
     buildingID: 1
     showInUI: 1
-  - nodeName: WCh101
+  - nodeName: WCh102a
     sceneName: WChP1
     buildingID: 1
     showInUI: 1
@@ -4268,7 +4268,7 @@ MonoBehaviour:
   - nodeName: SidePoint13
     sceneName: WChP2
     buildingID: 1
-    showInUI: 1
+    showInUI: 0
   - nodeName: WCh254c
     sceneName: WChP2
     buildingID: 1
@@ -4500,7 +4500,7 @@ MonoBehaviour:
   - nodeName: SidePoint20
     sceneName: WChP2
     buildingID: 1
-    showInUI: 1
+    showInUI: 0
   - nodeName: WCh248c
     sceneName: WChP2
     buildingID: 1
@@ -4512,7 +4512,7 @@ MonoBehaviour:
   - nodeName: SidePoint17
     sceneName: WChP2
     buildingID: 1
-    showInUI: 1
+    showInUI: 0
   - nodeName: WCh262c
     sceneName: WChP2
     buildingID: 1
@@ -4576,7 +4576,7 @@ MonoBehaviour:
   - nodeName: SidePoint9
     sceneName: WChP2
     buildingID: 1
-    showInUI: 1
+    showInUI: 0
   - nodeName: WChP2MidCorridor2
     sceneName: WChP2
     buildingID: 1
@@ -4768,7 +4768,7 @@ MonoBehaviour:
   - nodeName: SidePoint10
     sceneName: WChP2
     buildingID: 1
-    showInUI: 1
+    showInUI: 0
   - nodeName: WCh254
     sceneName: WChP2
     buildingID: 1
@@ -4776,7 +4776,7 @@ MonoBehaviour:
   - nodeName: SidePoint22
     sceneName: WChP2
     buildingID: 1
-    showInUI: 1
+    showInUI: 0
   - nodeName: WCh235
     sceneName: WChP2
     buildingID: 1
@@ -4788,7 +4788,7 @@ MonoBehaviour:
   - nodeName: SidePoint5
     sceneName: WChP2
     buildingID: 1
-    showInUI: 1
+    showInUI: 0
   - nodeName: WCh2GSroomc
     sceneName: WChP2
     buildingID: 1
@@ -5217,6 +5217,10 @@ MonoBehaviour:
     sceneName: WChP4
     buildingID: 1
     showInUI: 1
+  - nodeName: WCh4Stair331Upper1
+    sceneName: WChP4
+    buildingID: 1
+    showInUI: 0
   - nodeName: WCh4Stair331Upperc
     sceneName: WChP4
     buildingID: 1

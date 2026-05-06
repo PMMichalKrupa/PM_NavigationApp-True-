@@ -511,7 +511,7 @@ public class SimplePathfinder : MonoBehaviour
         }
         else
         {
-            targetNode = null; // ustawimy później przez system multi-floor
+            targetNode = null;
         }
 
         if (startNode == null)
@@ -541,7 +541,6 @@ public class SimplePathfinder : MonoBehaviour
     {
         Node[] allNodes = FindObjectsOfType<Node>();
 
-        // 1. Zbuduj graf scen (połączenia między piętrami)
         Dictionary<string, List<string>> sceneGraph = new Dictionary<string, List<string>>();
 
         foreach (var node in allNodes)
