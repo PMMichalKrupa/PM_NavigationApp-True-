@@ -1,22 +1,20 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class MainMenuController : MonoBehaviour
 {
-    public GameObject   ButtonHP,
-                        ButtonWCh,
-                        ButtonKostka,
-                        ButtonSzczerbcowa,
+    public GameObject
+                        ButtonHP, ButtonWCh, ButtonKostka, ButtonSzczerbcowa,
                         ButtonBackFromChoice,
-                        OpenEntrancesButton,
-                        ChooseBuildingMenu,
-                        ChooseOptionMenu,
-                        ChooseSettingsMenu,
-                        OpenSettingsButton,
-                        ShowHiddenPoints,
-                        ShowCurrentScenePoints,
-                        B1S, B0, B1, B2, B3, B4, B5;
+                        OpenEntrancesButton, OpenSettingsButton, OpenManualButton,
+                        ShowHiddenPoints, ShowCurrentScenePoints,
+                        B1S, B0, B1, B2, B3, B4, B5,
+                        PreviousButton, NextButton;
+
+    public TMP_Text tytulMenu, ManualText;
+
     // Nazwa sceny
     [SerializeField] private string HenrykaPoboznego1S = "HP1";
     [SerializeField] private string HenrykaPoboznego0 = "HPP0";
@@ -37,13 +35,12 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private string Szczerbcowa0 = "SzczerbcowaParter";
     [SerializeField] private string Szczerbcowa1 = "SzczerbcowaPietro";
 
-    public int buildingType = 0;
+    int buildingType, pageNumber;
 
     public void EnterHP()
     {
         buildingType = 0;
         TurnItAllOff();
-        ChooseBuildingMenu.SetActive(true);
         ButtonBackFromChoice.SetActive(true);
         B1S.SetActive(true);
         B0.SetActive(true);
@@ -52,12 +49,12 @@ public class MainMenuController : MonoBehaviour
         B3.SetActive(true);
         B4.SetActive(true);
         B5.SetActive(true);
+        ChangeMenuName("Wybierz piêtro");
     }
     public void EnterWCh()
     {
         buildingType = 1;
         TurnItAllOff();
-        ChooseBuildingMenu.SetActive(true);
         ButtonBackFromChoice.SetActive(true);
         B1S.SetActive(true);
         B0.SetActive(true);
@@ -65,29 +62,30 @@ public class MainMenuController : MonoBehaviour
         B2.SetActive(true);
         B3.SetActive(true);
         B4.SetActive(true);
+        ChangeMenuName("Wybierz piêtro");
     }
     public void EnterKostka()
     {
         buildingType = 2;
         TurnItAllOff();
-        ChooseBuildingMenu.SetActive(true);
         ButtonBackFromChoice.SetActive(true);
         B1S.SetActive(true);
         B0.SetActive(true);
         B1.SetActive(true);
+        ChangeMenuName("Wybierz piêtro");
     }
     public void EnterSzczerbcowa()
     {
         buildingType = 3;
         TurnItAllOff();
-        ChooseBuildingMenu.SetActive(true);
         ButtonBackFromChoice.SetActive(true);
         B0.SetActive(true);
         B1.SetActive(true);
+        ChangeMenuName("Wybierz piêtro");
     }
     public void EnterFloor1S()
     {
-        LoadScene(buildingType+90);
+        LoadScene(buildingType + 90);
     }
     public void EnterFloor0()
     {
@@ -95,23 +93,23 @@ public class MainMenuController : MonoBehaviour
     }
     public void EnterFloor1()
     {
-        LoadScene(buildingType+10);
+        LoadScene(buildingType + 10);
     }
     public void EnterFloor2()
     {
-        LoadScene(buildingType+20);
+        LoadScene(buildingType + 20);
     }
     public void EnterFloor3()
     {
-        LoadScene(buildingType+30);
+        LoadScene(buildingType + 30);
     }
     public void EnterFloor4()
     {
-        LoadScene(buildingType+40);
+        LoadScene(buildingType + 40);
     }
     public void EnterFloor5()
     {
-        LoadScene(buildingType+50);
+        LoadScene(buildingType + 50);
     }
     public void LoadScene(int BI)
     {
@@ -184,22 +182,32 @@ public class MainMenuController : MonoBehaviour
         ButtonKostka.SetActive(true);
         ButtonSzczerbcowa.SetActive(true);
         ButtonBackFromChoice.SetActive(true);
-        ChooseBuildingMenu.SetActive(true);
+        ChangeMenuName("Wybierz budynek");
     }
     public void OpenSettings()
     {
         TurnItAllOff();
         ButtonBackFromChoice.SetActive(true);
-        ChooseSettingsMenu.SetActive(true);
         ShowHiddenPoints.SetActive(true);
         ShowCurrentScenePoints.SetActive(true);
+        ChangeMenuName("Ustawienia");
+    }
+    public void OpenManual()
+    {
+        TurnItAllOff();
+        ButtonBackFromChoice.SetActive(true);
+        NextButton.SetActive(true);
+        ChangeMenuName("Instrukcja");
+        pageNumber = 0;
+        UpdatePage();
     }
     public void ReturnToMenu()
     {
         TurnItAllOff();
         OpenEntrancesButton.SetActive(true);
         OpenSettingsButton.SetActive(true);
-        ChooseOptionMenu.SetActive(true);
+        OpenManualButton.SetActive(true);
+        ChangeMenuName("System Nawigacji");
     }
     void TurnItAllOff()
     {
@@ -208,11 +216,9 @@ public class MainMenuController : MonoBehaviour
         ButtonKostka.SetActive(false);
         ButtonSzczerbcowa.SetActive(false);
         ButtonBackFromChoice.SetActive(false);
-        ChooseBuildingMenu.SetActive(false);
         OpenEntrancesButton.SetActive(false);
         OpenSettingsButton.SetActive(false);
-        ChooseOptionMenu.SetActive(false);
-        ChooseSettingsMenu.SetActive(false);
+        OpenManualButton.SetActive(false);
         ShowHiddenPoints.SetActive(false);
         ShowCurrentScenePoints.SetActive(false);
         B1S.SetActive(false);
@@ -222,6 +228,9 @@ public class MainMenuController : MonoBehaviour
         B3.SetActive(false);
         B4.SetActive(false);
         B5.SetActive(false);
+        PreviousButton.SetActive(false);
+        NextButton.SetActive(false);
+        ManualText.text = "";
     }
     public void ToggleShowHidden(bool value1)
     {
@@ -237,6 +246,9 @@ public class MainMenuController : MonoBehaviour
     void Start()
     {
         LoadToggleStates();
+        ChangeMenuName("System Nawigacji");
+        TurnItAllOff();
+        ReturnToMenu();
     }
 
     void LoadToggleStates()
@@ -246,5 +258,65 @@ public class MainMenuController : MonoBehaviour
 
         ShowCurrentScenePoints.GetComponent<Toggle>().isOn =
             PlayerPrefs.GetInt("StartOnlyCurrentScene", 0) == 1;
+    }
+    public void NextPage()
+    {
+        pageNumber++;
+        UpdatePage();
+    }
+    public void PreviousPage()
+    {
+        pageNumber--;
+        UpdatePage();
+    }
+    public void UpdatePage()
+    {
+        switch (pageNumber)
+        {
+            case 0:
+                PreviousButton.SetActive(false);
+                ManualText.text = "Identyfikacja kondygnacji:\n" +
+                                    "\n" +
+                                    "Wa³y Chrobrego:\n" +
+                                    "WCh1S - Piwnica\n" +
+                                    "WCh0 - Parter\n" +
+                                    "WChP1 - Piêtro 1\n" +
+                                    "WChP2 - Piêtro 2\n" +
+                                    "WChP3 - Piêtro 3\n" +
+                                    "WChP4 - Piêtro 4\n" +
+                                    "\n" +
+                                    "Szczerbcowa:\n" +
+                                    "SzczerbcowaParter - Parter\n" +
+                                    "SzczerbcowaPietro - Pietro 1\n" +
+                                    "\n" +
+                                    "Henryka Pobo¿nego:\n" +
+                                    "HP1 - Piwnica\n" +
+                                    "HP0 - Parter\n" +
+                                    "HPP1 - Piêtro 1\n" +
+                                    "HPP2 - Piêtro 2\n" +
+                                    "HPP3 - Piêtro 3\n" +
+                                    "HPP4 - Piêtro 4\n" +
+                                    "HPP5 - Piêtro 5\n" +
+                                    "\n" +
+                                    "Kostka:\n" +
+                                    "Kostka1S - Piwnica\n" +
+                                    "Kostka0 - Parter\n" +
+                                    "Kostka1 - Piêtro 1";
+                break;
+            case 1:
+                PreviousButton.SetActive(true);
+                NextButton.SetActive(true);
+                ManualText.text = "";
+                break;
+            case 2:
+                NextButton.SetActive(false);
+                ManualText.text = "Example last scene";
+                break;
+        }
+    }
+
+    public void ChangeMenuName(string MenuText)
+    {
+        tytulMenu.text = MenuText;
     }
 }
