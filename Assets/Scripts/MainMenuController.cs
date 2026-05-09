@@ -11,9 +11,10 @@ public class MainMenuController : MonoBehaviour
                         OpenEntrancesButton, OpenSettingsButton, OpenManualButton,
                         ShowHiddenPoints, ShowCurrentScenePoints,
                         B1S, B0, B1, B2, B3, B4, B5,
-                        PreviousButton, NextButton;
+                        PreviousButton, NextButton,
+                        ExitButton, DenyExit;
 
-    public TMP_Text tytulMenu, ManualText;
+    public TMP_Text tytulMenu, ManualText, ExitText;
 
     // Nazwa sceny
     [SerializeField] private string HenrykaPoboznego1S = "HP1";
@@ -36,6 +37,7 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private string Szczerbcowa1 = "SzczerbcowaPietro";
 
     int buildingType, pageNumber;
+    bool exitstatus;
 
     public void EnterHP()
     {
@@ -207,7 +209,10 @@ public class MainMenuController : MonoBehaviour
         OpenEntrancesButton.SetActive(true);
         OpenSettingsButton.SetActive(true);
         OpenManualButton.SetActive(true);
-        ChangeMenuName("System Nawigacji");
+        ChangeMenuName("Aplikacja do Nawigacji");
+        ExitButton.SetActive(true);
+        ExitText.text = "WyjdŸ";
+        exitstatus = false;
     }
     void TurnItAllOff()
     {
@@ -230,6 +235,8 @@ public class MainMenuController : MonoBehaviour
         B5.SetActive(false);
         PreviousButton.SetActive(false);
         NextButton.SetActive(false);
+        ExitButton.SetActive(false);
+        DenyExit.SetActive(false);
         ManualText.text = "";
     }
     public void ToggleShowHidden(bool value1)
@@ -246,7 +253,6 @@ public class MainMenuController : MonoBehaviour
     void Start()
     {
         LoadToggleStates();
-        ChangeMenuName("System Nawigacji");
         TurnItAllOff();
         ReturnToMenu();
     }
@@ -318,5 +324,22 @@ public class MainMenuController : MonoBehaviour
     public void ChangeMenuName(string MenuText)
     {
         tytulMenu.text = MenuText;
+    }
+
+    public void ExitApp()
+    {
+        if(!exitstatus)
+        {
+            TurnItAllOff();
+            DenyExit.SetActive(true);
+            ExitButton.SetActive(true);
+            ChangeMenuName("Wyjœæ z programu?");
+            ExitText.text = "Tak";
+            exitstatus = true;
+        }
+        else
+        {
+            Application.Quit();
+        }
     }
 }
