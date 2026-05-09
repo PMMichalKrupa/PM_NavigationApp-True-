@@ -146,6 +146,9 @@ public class UIPathSelector : MonoBehaviour
     }
     public void ToggleVisualMode()
     {
+        EnsurePathfinder();
+        if (pathfinder == null)
+            return;
         if (pathfinder.visualMode == PathVisualMode.LineWithMarker)
             pathfinder.visualMode = PathVisualMode.ThickLine;
         else

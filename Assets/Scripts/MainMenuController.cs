@@ -312,11 +312,20 @@ public class MainMenuController : MonoBehaviour
             case 1:
                 PreviousButton.SetActive(true);
                 NextButton.SetActive(true);
-                ManualText.text = "";
+                ManualText.text = "Skróty klawiszowe:\n" +
+                                    "\n" +
+                                    "W - przewijanie kamery w górê\n" +
+                                    "S - przewijanie kamery w dó³\n" +
+                                    "A - przewijanie kamery w lewo\n" +
+                                    "D - przewijanie kamery w prawo\n" +
+                                    "Spacja - oddalanie kamery\n" +
+                                    "Shift - przybli¿enie kamery";
                 break;
             case 2:
                 NextButton.SetActive(false);
-                ManualText.text = "Example last scene";
+                ManualText.text = "Example last scene\n" +
+                                    "\n" +
+                                    "Fill later";
                 break;
         }
     }
