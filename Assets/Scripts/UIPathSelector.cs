@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using static SimplePathfinder;
+using static UIController;
 using UnityEngine.SceneManagement;
 
 public class UIPathSelector : MonoBehaviour
@@ -10,6 +11,7 @@ public class UIPathSelector : MonoBehaviour
     public Dropdown startDropdown;
     public Dropdown endDropdown;
     public SimplePathfinder pathfinder;
+    public UIController UIC;
     private List<NodeData> allNodes = new List<NodeData>();
     private NodeData chosenStart;
     NodeData chosenEnd;
@@ -56,6 +58,7 @@ public class UIPathSelector : MonoBehaviour
         else
         {
             Debug.LogError("Nie znaleziono NodeDatabase w Resources!");
+            UIC.ShowMessage("Nie znaleziono NodeDatabase w Resources!");
         }
 
         // Przygotuj nazwy do dropdownów
@@ -177,6 +180,7 @@ public class UIPathSelector : MonoBehaviour
             if (chosenStart == null)
             {
                 Debug.LogError("Nie znaleziono START z planu");
+                UIC.ShowMessage("Nie znaleziono START z planu");
                 return;
             }
 
@@ -224,6 +228,7 @@ public class UIPathSelector : MonoBehaviour
             if (chosenEnd == null)
             {
                 Debug.LogError("Nie znaleziono END z planu");
+                UIC.ShowMessage("Nie znaleziono END z planu");
                 return;
             }
 
@@ -270,6 +275,7 @@ public class UIPathSelector : MonoBehaviour
         if (startNodeReal == null)
         {
             Debug.LogWarning("Start node nie istnieje w tej scenie!");
+            UIC.ShowMessage("Start node nie istnieje w tej scenie!");
             pathfinder.ClearPath();
             return;
         }
@@ -286,6 +292,7 @@ public class UIPathSelector : MonoBehaviour
             if (exit == null)
             {
                 Debug.LogWarning("Brak emergencyExit w tym Node!");
+                UIC.ShowMessage("Brak emergencyExit w tym Node!");
                 pathfinder.ClearPath();
                 return;
             }
@@ -373,7 +380,8 @@ public class UIPathSelector : MonoBehaviour
                     }
                     else
                     {
-                        Debug.LogWarning("Brak connection dla schodów!");
+                        Debug.LogWarning("Brak połączenia dla schodów!");
+                        UIC.ShowMessage("Brak połączenia dla schodów!");
                     }
                 }
 
@@ -395,6 +403,7 @@ public class UIPathSelector : MonoBehaviour
             if (finalTarget == null)
             {
                 Debug.LogWarning($"Target node NIE ISTNIEJE: {endNodeData.nodeName} w scenie {endNodeData.sceneName}");
+                UIC.ShowMessage("Node " + endNodeData.nodeName + " nie istnieje w scenie " + endNodeData.sceneName);
                 pathfinder.ClearPath();
                 return;
             }
@@ -500,6 +509,7 @@ public class UIPathSelector : MonoBehaviour
             if (pathfinder == null)
             {
                 Debug.LogWarning("Brak SimplePathfinder w scenie!");
+                UIC.ShowMessage("Brak SimplePathfinder w scenie!");
             }
         }
     }
