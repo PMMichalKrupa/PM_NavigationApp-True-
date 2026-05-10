@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Net;
 using UnityEngine;
 
@@ -37,12 +38,40 @@ public class CameraController : MonoBehaviour
         transform.Translate(movement, Space.World);
     }
 
-    public void ShiftPosition(Vector3 positionStart, Vector3 positionEnd)
+    public void ShiftPosition(Vector3 positionStart, Vector3 positionEnd, List<Node> path)
     {
-        float distance = Vector3.Distance(positionStart, positionEnd);
+        float minX = Mathf.Infinity, maxX = -Mathf.Infinity, minZ = Mathf.Infinity, maxZ = -Mathf.Infinity;
+        Debug.Log("Iloœæ nodów: " + path.Count);
+        for (int i = 0; i < path.Count; i++)
+        {
+            Debug.Log(path[i].transform.position.x + " " + path[i].transform.position.z);
+            if (path[i].transform.position.x < minX)
+            {
+                minX = path[i].transform.position.x;
+            }
+            if (path[i].transform.position.x > maxX)
+            {
+                maxX = path[i].transform.position.x;
+            }
+            if (path[i].transform.position.z < minZ)
+            {
+                minZ = path[i].transform.position.z;
+            }
+            if (path[i].transform.position.z > maxZ)
+            {
+                maxZ = path[i].transform.position.z;
+            }
+            Debug.Log("Przerobione Nody: " + (i+1) + " Wartoœci skrajne: minX:" + minX + " maxX:" + maxX + " minZ:" + minZ + " maxZ:" + maxZ);
+        }
+        Vector3 largestCords = new Vector3(maxX, 0, maxZ);
+        Vector3 smallestCords = new Vector3(minX, 0, minZ);
 
-        Camera.transform.position = new Vector3(    (positionStart.x + positionEnd.x)/2,
+        float distance = Vector3.Distance(largestCords, smallestCords);
+
+        Camera.transform.position = new Vector3(    
+                                                    (minX + maxX) /2,
                                                     distance,
-                                                    (positionStart.z + positionEnd.z)/2);
+                                                    (minZ + maxZ) /2
+                                               );
     }
 }

@@ -398,7 +398,7 @@ public class SimplePathfinder : MonoBehaviour
             }
         }
         {
-            CC.ShiftPosition(startNode.transform.position, targetNode.transform.position);
+            CC.ShiftPosition(startNode.transform.position, targetNode.transform.position, path);
         }
         Debug.Log("Po CamSnap " + CamSnap);
     }
