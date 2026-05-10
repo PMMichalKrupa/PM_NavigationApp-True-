@@ -935,6 +935,7 @@ MonoBehaviour:
   SBorder: -10
   ABorder: -10
   DBorder: 10
+  Camera: {fileID: 961739749}
 --- !u!1001 &1024694782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1393,6 +1394,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8769769565017852667, guid: 48eb4a6fc41f6ac46ae3a07832d6bf75, type: 3}
+      propertyPath: CC
+      value: 
+      objectReference: {fileID: 961739754}
     - target: {fileID: 8769769565017852667, guid: 48eb4a6fc41f6ac46ae3a07832d6bf75, type: 3}
       propertyPath: marker
       value: 

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Net;
 using UnityEngine;
 
 public class SimplePathfinder : MonoBehaviour
@@ -8,6 +9,7 @@ public class SimplePathfinder : MonoBehaviour
     public Node targetNode; //Przechowuje node na którym kończy się trasa
     public PathMarker marker;
     public LineRenderer lineRenderer;
+    public CameraController CC;
     private List<LineRenderer> extraLines = new List<LineRenderer>();
     public Node ResolveExit(Node start, Node target)
     {
@@ -102,13 +104,14 @@ public class SimplePathfinder : MonoBehaviour
 
     void Start()
     {
+        
         if (PlayerPrefs.HasKey("NextStartNode"))
-{
-    string startName = PlayerPrefs.GetString("NextStartNode");
-    string startScene = PlayerPrefs.GetString("NextStartScene", "");
+        {
+            string startName = PlayerPrefs.GetString("NextStartNode");
+            string startScene = PlayerPrefs.GetString("NextStartScene", "");
 
-    startNode = FindNodeByName(startName, startScene);
-}
+            startNode = FindNodeByName(startName, startScene);
+        }
         if (PlayerPrefs.HasKey("NextScene"))
         {
             string scene = PlayerPrefs.GetString("NextScene");
@@ -345,6 +348,8 @@ public class SimplePathfinder : MonoBehaviour
     // Wywoływane z UI
     public void DrawPath()
     {
+        bool CamSnap = PlayerPrefs.GetInt("SnapCameraOnChange", 0) == 1; ;
+        Debug.Log("Drawpath sie wykonuje");
         if (startNode == null || targetNode == null)
         {
             ClearPath();
@@ -392,6 +397,10 @@ public class SimplePathfinder : MonoBehaviour
                 marker.gameObject.SetActive(false);
             }
         }
+        {
+            CC.ShiftPosition(startNode.transform.position, targetNode.transform.position);
+        }
+        Debug.Log("Po CamSnap " + CamSnap);
     }
 
     // BFS

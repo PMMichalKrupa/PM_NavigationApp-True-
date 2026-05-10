@@ -1,9 +1,11 @@
+using System.Net;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float WBorder, SBorder, ABorder, DBorder;
+    public GameObject Camera;
 
     void Update()
     {
@@ -33,5 +35,14 @@ public class CameraController : MonoBehaviour
 
         Vector3 movement = new Vector3(moveX, moveY, moveZ) * moveSpeed * Time.deltaTime;
         transform.Translate(movement, Space.World);
+    }
+
+    public void ShiftPosition(Vector3 positionStart, Vector3 positionEnd)
+    {
+        float distance = Vector3.Distance(positionStart, positionEnd);
+
+        Camera.transform.position = new Vector3(    (positionStart.x + positionEnd.x)/2,
+                                                    distance,
+                                                    (positionStart.z + positionEnd.z)/2);
     }
 }

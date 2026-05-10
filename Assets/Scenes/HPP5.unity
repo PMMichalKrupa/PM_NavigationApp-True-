@@ -1225,6 +1225,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8769769565017852667, guid: 48eb4a6fc41f6ac46ae3a07832d6bf75, type: 3}
+      propertyPath: CC
+      value: 
+      objectReference: {fileID: 961739754}
+    - target: {fileID: 8769769565017852667, guid: 48eb4a6fc41f6ac46ae3a07832d6bf75, type: 3}
       propertyPath: marker
       value: 
       objectReference: {fileID: 1900312478}
@@ -2295,6 +2299,7 @@ MonoBehaviour:
   SBorder: -35
   ABorder: -25
   DBorder: 25
+  Camera: {fileID: 961739749}
 --- !u!1001 &1035797455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2929,6 +2934,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
       propertyPath: normalExit
+      value: 
+      objectReference: {fileID: 471421335}
+    - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}
+      propertyPath: emergencyExit
       value: 
       objectReference: {fileID: 471421335}
     - target: {fileID: 7537155930703865888, guid: b0cf6c40781ec7440b40573b31d346ea, type: 3}

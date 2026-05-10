@@ -9,7 +9,7 @@ public class MainMenuController : MonoBehaviour
                         ButtonHP, ButtonWCh, ButtonKostka, ButtonSzczerbcowa,
                         ButtonBackFromChoice,
                         OpenEntrancesButton, OpenSettingsButton, OpenManualButton,
-                        ShowHiddenPoints, ShowCurrentScenePoints,
+                        ShowHiddenPoints, ShowCurrentScenePoints, SnapCameraOnChange,
                         B1S, B0, B1, B2, B3, B4, B5,
                         PreviousButton, NextButton,
                         ExitButton, DenyExit;
@@ -192,6 +192,7 @@ public class MainMenuController : MonoBehaviour
         ButtonBackFromChoice.SetActive(true);
         ShowHiddenPoints.SetActive(true);
         ShowCurrentScenePoints.SetActive(true);
+        SnapCameraOnChange.SetActive(true);
         ChangeMenuName("Ustawienia");
     }
     public void OpenManual()
@@ -226,6 +227,7 @@ public class MainMenuController : MonoBehaviour
         OpenManualButton.SetActive(false);
         ShowHiddenPoints.SetActive(false);
         ShowCurrentScenePoints.SetActive(false);
+        SnapCameraOnChange.SetActive(false);
         B1S.SetActive(false);
         B0.SetActive(false);
         B1.SetActive(false);
@@ -249,6 +251,11 @@ public class MainMenuController : MonoBehaviour
         PlayerPrefs.SetInt("StartOnlyCurrentScene", value2 ? 1 : 0);
         PlayerPrefs.Save();
     }
+    public void SnapCamera(bool value3)
+    {
+        PlayerPrefs.SetInt("SnapCameraOnChange", value3 ? 1 : 0);
+        PlayerPrefs.Save();
+    }
 
     void Start()
     {
@@ -264,6 +271,9 @@ public class MainMenuController : MonoBehaviour
 
         ShowCurrentScenePoints.GetComponent<Toggle>().isOn =
             PlayerPrefs.GetInt("StartOnlyCurrentScene", 0) == 1;
+
+        SnapCameraOnChange.GetComponent<Toggle>().isOn =
+            PlayerPrefs.GetInt("SnapCameraOnChange", 0) == 1;
     }
     public void NextPage()
     {

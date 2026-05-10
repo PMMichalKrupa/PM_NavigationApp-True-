@@ -289,9 +289,13 @@ public class UIPathSelector : MonoBehaviour
 
         if (useEmergencyExit)
         {
+            if (startNodeReal.emergencyExit == startNodeReal)
+            {
+                Debug.LogWarning("Node jest emergencyExit sam dla siebie");
+                return;
+            }
             Node exit = startNodeReal.emergencyExit;
             PlayerPrefs.SetString("SavedRealStartNode", startNodeReal.name);
-
             if (exit == null)
             {
                 Debug.LogWarning("Brak emergencyExit w tym Node!");
