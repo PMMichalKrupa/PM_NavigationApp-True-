@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    public float WBorder, SBorder, ABorder, DBorder;
-    public GameObject Camera;
+    [SerializeField] private float WBorder, SBorder, ABorder, DBorder, MaxHeight = 85f, MinHeight = 15f, moveSpeed = 5f;
+    [SerializeField] private GameObject Camera;
 
     void Update()
     {
@@ -27,10 +26,10 @@ public class CameraController : MonoBehaviour
             moveX -= 1f;
 
         // Space/Shift = up/down (Y axis)
-        if (Input.GetKey(KeyCode.Space)     && transform.position.y < 85f)
+        if (Input.GetKey(KeyCode.Space)     && transform.position.y < MaxHeight)
             moveY += 1f;
 
-        if (Input.GetKey(KeyCode.LeftShift) && transform.position.y > 15f)
+        if (Input.GetKey(KeyCode.LeftShift) && transform.position.y > MinHeight)
             moveY -= 1f;
 
 
@@ -67,6 +66,10 @@ public class CameraController : MonoBehaviour
         Vector3 smallestCords = new Vector3(minX, 0, minZ);
 
         float distance = Vector3.Distance(largestCords, smallestCords);
+        if (distance < MinHeight)
+        {
+            distance = MinHeight;
+        }
 
         Camera.transform.position = new Vector3(    
                                                     (minX + maxX) /2,

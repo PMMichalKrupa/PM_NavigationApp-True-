@@ -5,36 +5,38 @@ using TMPro;
 
 public class MainMenuController : MonoBehaviour
 {
-    public GameObject
-                        ButtonHP, ButtonWCh, ButtonKostka, ButtonSzczerbcowa,
-                        ButtonBackFromChoice,
-                        OpenEntrancesButton, OpenSettingsButton, OpenManualButton,
-                        ShowHiddenPoints, ShowCurrentScenePoints, SnapCameraOnChange,
-                        B1S, B0, B1, B2, B3, B4, B5,
-                        PreviousButton, NextButton,
-                        ExitButton, DenyExit;
+    [SerializeField] private GameObject ButtonHP, ButtonWCh, ButtonKostka, ButtonSzczerbcowa,
+                                        ButtonBackFromChoice,
+                                        OpenEntrancesButton, OpenSettingsButton, OpenManualButton,
+                                        ShowHiddenPoints, ShowCurrentScenePoints, SnapCameraOnChange,
+                                        B1S, B0, B1, B2, B3, B4, B5,
+                                        PreviousButton, NextButton,
+                                        ExitButton, DenyExit;
 
-    public TMP_Text tytulMenu, ManualText, ExitText;
+    [SerializeField] private TMP_Text tytulMenu, ManualText, ExitText;
 
     // Nazwa sceny
-    [SerializeField] private string HenrykaPoboznego1S = "HP1";
-    [SerializeField] private string HenrykaPoboznego0 = "HPP0";
-    [SerializeField] private string HenrykaPoboznego1 = "HPP1";
-    [SerializeField] private string HenrykaPoboznego2 = "HPP2";
-    [SerializeField] private string HenrykaPoboznego3 = "HPP3";
-    [SerializeField] private string HenrykaPoboznego4 = "HPP4";
-    [SerializeField] private string HenrykaPoboznego5 = "HPP5";
-    [SerializeField] private string WalyChrobrego1S = "WCh1S";
-    [SerializeField] private string WalyChrobrego0 = "WCh0";
-    [SerializeField] private string WalyChrobrego1 = "WChP1";
-    [SerializeField] private string WalyChrobrego2 = "WChP2";
-    [SerializeField] private string WalyChrobrego3 = "WChP3";
-    [SerializeField] private string WalyChrobrego4 = "WChP4";
-    [SerializeField] private string Kostka1S = "Kostka1S";
-    [SerializeField] private string Kostka0 = "Kostka0";
-    [SerializeField] private string Kostka1 = "Kostka1";
-    [SerializeField] private string Szczerbcowa0 = "SzczerbcowaParter";
-    [SerializeField] private string Szczerbcowa1 = "SzczerbcowaPietro";
+    [SerializeField] private string HenrykaPoboznego1S = "HP1",
+                                    HenrykaPoboznego0 = "HPP0",
+                                    HenrykaPoboznego1 = "HPP1",
+                                    HenrykaPoboznego2 = "HPP2",
+                                    HenrykaPoboznego3 = "HPP3",
+                                    HenrykaPoboznego4 = "HPP4",
+                                    HenrykaPoboznego5 = "HPP5",
+
+                                    WalyChrobrego1S = "WCh1S",
+                                    WalyChrobrego0 = "WCh0",
+                                    WalyChrobrego1 = "WChP1",
+                                    WalyChrobrego2 = "WChP2",
+                                    WalyChrobrego3 = "WChP3",
+                                    WalyChrobrego4 = "WChP4",
+
+                                    Kostka1S = "Kostka1S",
+                                    Kostka0 = "Kostka0",
+                                    Kostka1 = "Kostka1",
+
+                                    Szczerbcowa0 = "SzczerbcowaParter",
+                                    Szczerbcowa1 = "SzczerbcowaPietro";
 
     int buildingType, pageNumber;
     bool exitstatus;

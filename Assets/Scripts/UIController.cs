@@ -3,7 +3,7 @@ using TMPro;
 
 public class UIController : MonoBehaviour
 {
-    public GameObject tooltip; // obiekt z ca³¹ map¹ (Plane + œciany)
+    [SerializeField] private GameObject tooltip; // obiekt z ca³¹ map¹ (Plane + œciany)
     [SerializeField] public TMP_Text MessageText;
     private float MessageTimer = 0;
     public void ToggleTooltip()

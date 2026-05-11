@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PathMarker : MonoBehaviour
 {
-    public float moveSpeed = 2f; // prêdkoœæ w jednostkach/sekundê
+    [SerializeField] private float moveSpeed = 2f; // prêdkoœæ w jednostkach/sekundê
     private LineRenderer lineRenderer;
     private Renderer rend;
     private List<Node> pathNodes;
