@@ -13,6 +13,7 @@ public class UIPathSelector : MonoBehaviour
     public SimplePathfinder pathfinder;
     public UIController UIC;
     private List<NodeData> allNodes = new List<NodeData>();
+    private List<NodeData> filteredStartNodes = new List<NodeData>();
     private NodeData chosenStart;
     NodeData chosenEnd;
     bool useEmergencyExit;
@@ -38,7 +39,6 @@ public class UIPathSelector : MonoBehaviour
 
         // Pobierz wszystkie node'y z bazy danych
         NodeDatabase db = Resources.Load<NodeDatabase>("NodeDatabase");
-
         if (db != null)
         {
             allNodes = new List<NodeData>(db.nodes);
@@ -67,11 +67,13 @@ public class UIPathSelector : MonoBehaviour
         nodeNames.Insert(0, "Wybierz salę");
         nodeNames.Insert(1, "Wybierz z planu");
 
-        foreach (var node in allNodes)
+        filteredStartNodes = allNodes.FindAll(n => (n.sceneName == currentScene));
+        foreach (var node in filteredStartNodes)
         {
             string displayName = node.nodeName + " (" + node.sceneName + ")";
             nodeNames.Add(displayName);
         }
+
 
         startDropdown.ClearOptions();
         startDropdown.AddOptions(nodeNames);
@@ -114,7 +116,7 @@ public class UIPathSelector : MonoBehaviour
             string savedUIStart = PlayerPrefs.GetString("SavedUIStartNode");
             string savedTargetScene = PlayerPrefs.GetString("FinalTargetScene");
 
-            chosenStart = allNodes.Find(n =>
+            chosenStart = filteredStartNodes.Find(n =>
                 n.nodeName == savedUIStart);
 
             chosenEnd = allNodes.Find(n =>
@@ -193,7 +195,7 @@ public class UIPathSelector : MonoBehaviour
             return;
         }
 
-        chosenStart = allNodes[index - 2];
+        chosenStart = filteredStartNodes[index - 2];
         Debug.Log("Wybrano start: " + chosenStart.nodeName);
         PlayerPrefs.DeleteKey("IsMultiFloor");
         PlayerPrefs.DeleteKey("NextStartNode");
