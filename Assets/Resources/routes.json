@@ -6,6 +6,15 @@
       "startScene": "WCh0",
       "endNode": "HP1sub04c",
       "endScene": "HP1",
+      "startTime": "00:01",
+      "endTime": "03:00"
+    },
+    {
+      "routeName": "WCh1_to_HP1",
+      "startNode": "WCh1",
+      "startScene": "WCh0",
+      "endNode": "HP1sub04c",
+      "endScene": "HP1",
       "startTime": "08:00",
       "endTime": "09:00"
     },

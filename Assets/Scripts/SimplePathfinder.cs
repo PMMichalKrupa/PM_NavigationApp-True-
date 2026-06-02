@@ -755,4 +755,8 @@ public class SimplePathfinder : MonoBehaviour
 
         extraLines.Clear();
     }
+    public bool HasRoutesLoaded()
+    {
+        return apiRoutes != null && apiRoutes.Length > 0;
+    }
 }

@@ -91,21 +91,14 @@ public class UIPathSelector : MonoBehaviour
             endNames.Add(displayName);
         }
         endDropdown.AddOptions(endNames);
+
         bool loadFromPlan = PlayerPrefs.GetInt("LoadFromPlan", 0) == 1;
 
         if (loadFromPlan)
         {
             PlayerPrefs.SetInt("LoadFromPlan", 0);
 
-            PlayerPrefs.DeleteKey("IsMultiFloor");
-            PlayerPrefs.DeleteKey("NextStartNode");
-            PlayerPrefs.DeleteKey("NextStartScene");
-            PlayerPrefs.DeleteKey("SceneTransition");
-            PlayerPrefs.DeleteKey("TransitionType");
-
-            startDropdown.value = 1;
-            endDropdown.value = 1;
-
+            StartCoroutine(WaitForAPIAndSelectPlan());
             return;
         }
         if (!fromSceneTransition)
@@ -562,5 +555,29 @@ public class UIPathSelector : MonoBehaviour
         }
 
         return best;
+    }
+    IEnumerator WaitForAPIAndSelectPlan()
+    {
+        EnsurePathfinder();
+
+        float timeout = 5f;
+        float timer = 0f;
+
+        while ((pathfinder == null || !pathfinder.HasRoutesLoaded()) && timer < timeout)
+        {
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        if (pathfinder == null || !pathfinder.HasRoutesLoaded())
+        {
+            Debug.LogError("API routes nadal niezaładowane!");
+            yield break;
+        }
+
+        Debug.Log("API gotowe — ustawiam dropdowny");
+
+        startDropdown.value = 1;
+        endDropdown.value = 1;
     }
 }
