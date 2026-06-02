@@ -22,6 +22,7 @@ public class UIPathSelector : MonoBehaviour
 
     void Start()
     {
+        
         bool showHidden = PlayerPrefs.GetInt("ShowHiddenPoints", 0) == 1;
         bool onlyCurrentScene = PlayerPrefs.GetInt("StartOnlyCurrentScene", 0) == 1;
         string currentScene = SceneManager.GetActiveScene().name;
@@ -90,6 +91,23 @@ public class UIPathSelector : MonoBehaviour
             endNames.Add(displayName);
         }
         endDropdown.AddOptions(endNames);
+        bool loadFromPlan = PlayerPrefs.GetInt("LoadFromPlan", 0) == 1;
+
+        if (loadFromPlan)
+        {
+            PlayerPrefs.SetInt("LoadFromPlan", 0);
+
+            PlayerPrefs.DeleteKey("IsMultiFloor");
+            PlayerPrefs.DeleteKey("NextStartNode");
+            PlayerPrefs.DeleteKey("NextStartScene");
+            PlayerPrefs.DeleteKey("SceneTransition");
+            PlayerPrefs.DeleteKey("TransitionType");
+
+            startDropdown.value = 1;
+            endDropdown.value = 1;
+
+            return;
+        }
         if (!fromSceneTransition)
         {
             startDropdown.SetValueWithoutNotify(0);

@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
@@ -7,7 +7,7 @@ public class MainMenuController : MonoBehaviour
 {
     [SerializeField] private GameObject ButtonHP, ButtonWCh, ButtonKostka, ButtonSzczerbcowa,
                                         ButtonBackFromChoice,
-                                        OpenEntrancesButton, OpenSettingsButton, OpenManualButton,
+                                        OpenEntrancesButton, OpenSettingsButton, OpenManualButton, OpenPlanScene,
                                         ShowHiddenPoints, ShowCurrentScenePoints, SnapCameraOnChange,
                                         B1S, B0, B1, B2, B3, B4, B5,
                                         PreviousButton, NextButton,
@@ -53,7 +53,7 @@ public class MainMenuController : MonoBehaviour
         B3.SetActive(true);
         B4.SetActive(true);
         B5.SetActive(true);
-        ChangeMenuName("Wybierz piêtro");
+        ChangeMenuName("Wybierz piÄ™tro");
     }
     public void EnterWCh()
     {
@@ -66,7 +66,7 @@ public class MainMenuController : MonoBehaviour
         B2.SetActive(true);
         B3.SetActive(true);
         B4.SetActive(true);
-        ChangeMenuName("Wybierz piêtro");
+        ChangeMenuName("Wybierz piÄ™tro");
     }
     public void EnterKostka()
     {
@@ -76,7 +76,7 @@ public class MainMenuController : MonoBehaviour
         B1S.SetActive(true);
         B0.SetActive(true);
         B1.SetActive(true);
-        ChangeMenuName("Wybierz piêtro");
+        ChangeMenuName("Wybierz piÄ™tro");
     }
     public void EnterSzczerbcowa()
     {
@@ -85,7 +85,7 @@ public class MainMenuController : MonoBehaviour
         ButtonBackFromChoice.SetActive(true);
         B0.SetActive(true);
         B1.SetActive(true);
-        ChangeMenuName("Wybierz piêtro");
+        ChangeMenuName("Wybierz piÄ™tro");
     }
     public void EnterFloor1S()
     {
@@ -212,9 +212,10 @@ public class MainMenuController : MonoBehaviour
         OpenEntrancesButton.SetActive(true);
         OpenSettingsButton.SetActive(true);
         OpenManualButton.SetActive(true);
+        OpenPlanScene.SetActive(true);
         ChangeMenuName("Aplikacja do Nawigacji");
         ExitButton.SetActive(true);
-        ExitText.text = "WyjdŸ";
+        ExitText.text = "WyjdÅº";
         exitstatus = false;
     }
     void TurnItAllOff()
@@ -227,6 +228,7 @@ public class MainMenuController : MonoBehaviour
         OpenEntrancesButton.SetActive(false);
         OpenSettingsButton.SetActive(false);
         OpenManualButton.SetActive(false);
+        OpenPlanScene.SetActive(false);
         ShowHiddenPoints.SetActive(false);
         ShowCurrentScenePoints.SetActive(false);
         SnapCameraOnChange.SetActive(false);
@@ -295,43 +297,43 @@ public class MainMenuController : MonoBehaviour
                 PreviousButton.SetActive(false);
                 ManualText.text = "Identyfikacja kondygnacji:\n" +
                                     "\n" +
-                                    "Wa³y Chrobrego:\n" +
+                                    "WaÅ‚y Chrobrego:\n" +
                                     "WCh1S - Piwnica\n" +
                                     "WCh0 - Parter\n" +
-                                    "WChP1 - Piêtro 1\n" +
-                                    "WChP2 - Piêtro 2\n" +
-                                    "WChP3 - Piêtro 3\n" +
-                                    "WChP4 - Piêtro 4\n" +
+                                    "WChP1 - PiÄ™tro 1\n" +
+                                    "WChP2 - PiÄ™tro 2\n" +
+                                    "WChP3 - PiÄ™tro 3\n" +
+                                    "WChP4 - PiÄ™tro 4\n" +
                                     "\n" +
                                     "Szczerbcowa:\n" +
                                     "SzczerbcowaParter - Parter\n" +
                                     "SzczerbcowaPietro - Pietro 1\n" +
                                     "\n" +
-                                    "Henryka Pobo¿nego:\n" +
+                                    "Henryka PoboÅ¼nego:\n" +
                                     "HP1 - Piwnica\n" +
                                     "HP0 - Parter\n" +
-                                    "HPP1 - Piêtro 1\n" +
-                                    "HPP2 - Piêtro 2\n" +
-                                    "HPP3 - Piêtro 3\n" +
-                                    "HPP4 - Piêtro 4\n" +
-                                    "HPP5 - Piêtro 5\n" +
+                                    "HPP1 - PiÄ™tro 1\n" +
+                                    "HPP2 - PiÄ™tro 2\n" +
+                                    "HPP3 - PiÄ™tro 3\n" +
+                                    "HPP4 - PiÄ™tro 4\n" +
+                                    "HPP5 - PiÄ™tro 5\n" +
                                     "\n" +
                                     "Kostka:\n" +
                                     "Kostka1S - Piwnica\n" +
                                     "Kostka0 - Parter\n" +
-                                    "Kostka1 - Piêtro 1";
+                                    "Kostka1 - PiÄ™tro 1";
                 break;
             case 1:
                 PreviousButton.SetActive(true);
                 NextButton.SetActive(true);
-                ManualText.text = "Skróty klawiszowe:\n" +
+                ManualText.text = "SkrÃ³ty klawiszowe:\n" +
                                     "\n" +
-                                    "W - przewijanie kamery w górê\n" +
-                                    "S - przewijanie kamery w dó³\n" +
+                                    "W - przewijanie kamery w gÃ³rÄ™\n" +
+                                    "S - przewijanie kamery w dÃ³Å‚\n" +
                                     "A - przewijanie kamery w lewo\n" +
                                     "D - przewijanie kamery w prawo\n" +
                                     "Spacja - oddalanie kamery\n" +
-                                    "Shift - przybli¿enie kamery";
+                                    "Shift - przybliÅ¼enie kamery";
                 break;
             case 2:
                 NextButton.SetActive(false);
@@ -354,7 +356,7 @@ public class MainMenuController : MonoBehaviour
             TurnItAllOff();
             DenyExit.SetActive(true);
             ExitButton.SetActive(true);
-            ChangeMenuName("Wyjœæ z programu?");
+            ChangeMenuName("WyjÅ›Ä‡ z programu?");
             ExitText.text = "Tak";
             exitstatus = true;
         }
@@ -362,5 +364,27 @@ public class MainMenuController : MonoBehaviour
         {
             Application.Quit();
         }
+    }
+    public void LoadFromPlan()
+    {
+        APIRoute route = RouteLoader.GetRouteFromJson();
+
+        if (route == null)
+        {
+            Debug.LogWarning("Brak trasy z planu");
+            return;
+        }
+
+        PlayerPrefs.SetString("Plan_StartNode", route.startNode);
+        PlayerPrefs.SetString("Plan_StartScene", route.startScene);
+
+        PlayerPrefs.SetString("Plan_EndNode", route.endNode);
+        PlayerPrefs.SetString("Plan_EndScene", route.endScene);
+
+        PlayerPrefs.SetInt("LoadFromPlan", 1);
+
+        PlayerPrefs.Save();
+
+        SceneManager.LoadScene(route.startScene);
     }
 }
