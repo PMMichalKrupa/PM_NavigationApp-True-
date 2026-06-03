@@ -12,23 +12,7 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-        float moveX = joystick.Horizontal;
-        float moveZ = joystick.Vertical;
-
-        float moveY = 0f;
-
-        if (Input.GetKey(KeyCode.Space)) moveY += 1f;
-        if (Input.GetKey(KeyCode.LeftShift)) moveY -= 1f;
-
-        Vector3 movement = new Vector3(moveX, moveY, moveZ) * moveSpeed * Time.deltaTime;
-
-        Vector3 newPos = transform.position + movement;
-
-        newPos.x = Mathf.Clamp(newPos.x, ABorder, DBorder);
-        newPos.y = Mathf.Clamp(newPos.y, MinHeight, MaxHeight);
-        newPos.z = Mathf.Clamp(newPos.z, SBorder, WBorder);
-
-        transform.position = newPos;
+        HandleMovement();
         HandlePinchZoom();
     }
 
@@ -81,7 +65,6 @@ public class CameraController : MonoBehaviour
 
             float currentDistance = Vector2.Distance(t0.position, t1.position);
 
-            // pierwsza klatka – inicjalizacja
             if (lastPinchDistance == 0f)
             {
                 lastPinchDistance = currentDistance;
@@ -90,7 +73,7 @@ public class CameraController : MonoBehaviour
 
             float delta = currentDistance - lastPinchDistance;
 
-            // skalowanie (wa¿ne – bez tego bêdzie za szybkie)
+            // skalowanie 
             float zoomAmount = delta * 0.01f;
 
             Vector3 pos = transform.position;
@@ -107,5 +90,39 @@ public class CameraController : MonoBehaviour
         {
             lastPinchDistance = 0f;
         }
+    }
+    void HandleMovement()
+    {
+        // Joystick
+        float joyX = joystick != null ? joystick.Horizontal : 0f;
+        float joyZ = joystick != null ? joystick.Vertical : 0f;
+
+        // Klawiatura
+        float keyX = Input.GetAxis("Horizontal"); // A/D
+        float keyZ = Input.GetAxis("Vertical");   // W/S
+
+        float moveX = joyX + keyX;
+        float moveZ = joyZ + keyZ;
+
+        float moveY = 0f;
+
+        if (Input.GetKey(KeyCode.Space)) moveY += 1f;
+        if (Input.GetKey(KeyCode.LeftShift)) moveY -= 1f;
+
+        Vector3 input = new Vector3(moveX, moveY, moveZ);
+
+        // zapobiega szybszemu ruchowi po skosie
+        if (input.magnitude > 1f)
+            input.Normalize();
+
+        Vector3 movement = input * moveSpeed * Time.deltaTime;
+
+        Vector3 newPos = transform.position + movement;
+
+        newPos.x = Mathf.Clamp(newPos.x, ABorder, DBorder);
+        newPos.y = Mathf.Clamp(newPos.y, MinHeight, MaxHeight);
+        newPos.z = Mathf.Clamp(newPos.z, SBorder, WBorder);
+
+        transform.position = newPos;
     }
 }

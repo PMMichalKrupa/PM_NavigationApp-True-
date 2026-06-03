@@ -10817,7 +10817,7 @@ MonoBehaviour:
   SBorder: -40
   ABorder: -80
   DBorder: 80
-  MaxHeight: 85
+  MaxHeight: 100
   MinHeight: 15
   moveSpeed: 30
   Camera: {fileID: 961739749}
