@@ -3915,12 +3915,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ab3b18b9987924697a34a5051362f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraController
-  moveSpeed: 30
   WBorder: 35
   SBorder: -35
   ABorder: -25
   DBorder: 25
+  MaxHeight: 85
+  MinHeight: 15
+  moveSpeed: 30
   Camera: {fileID: 961739749}
+  joystick: {fileID: 1831202270}
 --- !u!1001 &964302704
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7156,6 +7159,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f47119f0b7f5724692d67b07aaa3b03, type: 3}
+--- !u!114 &1831202270 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7291002522459560874, guid: 5f47119f0b7f5724692d67b07aaa3b03, type: 3}
+  m_PrefabInstance: {fileID: 1831202269}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1838162724
 PrefabInstance:
   m_ObjectHideFlags: 0

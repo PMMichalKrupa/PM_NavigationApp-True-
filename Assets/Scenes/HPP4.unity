@@ -1083,6 +1083,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5db19a4ddad767e4585dd2c51e24ee92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
+--- !u!114 &468060198 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7291002522459560874, guid: 5f47119f0b7f5724692d67b07aaa3b03, type: 3}
+  m_PrefabInstance: {fileID: 995249474}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &471193007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2613,12 +2624,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ab3b18b9987924697a34a5051362f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraController
-  moveSpeed: 30
   WBorder: 35
   SBorder: -35
   ABorder: -25
   DBorder: 25
+  MaxHeight: 85
+  MinHeight: 15
+  moveSpeed: 30
   Camera: {fileID: 961739749}
+  joystick: {fileID: 468060198}
 --- !u!1001 &995249474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2711,6 +2725,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 9090770015490535923, guid: 5f47119f0b7f5724692d67b07aaa3b03, type: 3}
+      propertyPath: pathfinder
+      value: 
+      objectReference: {fileID: 1258182176}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

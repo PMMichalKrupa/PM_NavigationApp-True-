@@ -7,34 +7,29 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float WBorder, SBorder, ABorder, DBorder, MaxHeight = 85f, MinHeight = 15f, moveSpeed = 5f;
     [SerializeField] private GameObject Camera;
 
+    public Joystick joystick;
+    float lastPinchDistance = 0f;
+
     void Update()
     {
-        float moveX = 0f, moveZ = 0f, moveY = 0f;
+        float moveX = joystick.Horizontal;
+        float moveZ = joystick.Vertical;
 
-        // WS = forward/back (Z axis)
-        if (Input.GetKey(KeyCode.W) && transform.position.z < WBorder)
-            moveZ += 1f;
+        float moveY = 0f;
 
-        if (Input.GetKey(KeyCode.S) && transform.position.z > SBorder)
-            moveZ -= 1f;
-
-        // AD = left/right (X axis)
-        if (Input.GetKey(KeyCode.D) && transform.position.x < DBorder)
-            moveX += 1f;
-
-        if (Input.GetKey(KeyCode.A) && transform.position.x > ABorder)
-            moveX -= 1f;
-
-        // Space/Shift = up/down (Y axis)
-        if (Input.GetKey(KeyCode.Space)     && transform.position.y < MaxHeight)
-            moveY += 1f;
-
-        if (Input.GetKey(KeyCode.LeftShift) && transform.position.y > MinHeight)
-            moveY -= 1f;
-
+        if (Input.GetKey(KeyCode.Space)) moveY += 1f;
+        if (Input.GetKey(KeyCode.LeftShift)) moveY -= 1f;
 
         Vector3 movement = new Vector3(moveX, moveY, moveZ) * moveSpeed * Time.deltaTime;
-        transform.Translate(movement, Space.World);
+
+        Vector3 newPos = transform.position + movement;
+
+        newPos.x = Mathf.Clamp(newPos.x, ABorder, DBorder);
+        newPos.y = Mathf.Clamp(newPos.y, MinHeight, MaxHeight);
+        newPos.z = Mathf.Clamp(newPos.z, SBorder, WBorder);
+
+        transform.position = newPos;
+        HandlePinchZoom();
     }
 
     public void ShiftPosition(Vector3 positionStart, Vector3 positionEnd, List<Node> path)
@@ -72,9 +67,45 @@ public class CameraController : MonoBehaviour
         }
 
         Camera.transform.position = new Vector3(    
-                                                    (minX + maxX) /2,
-                                                    distance,
-                                                    (minZ + maxZ) /2
-                                               );
+            (minX + maxX) /2,
+            distance,
+            (minZ + maxZ) /2
+        );
+    }
+    void HandlePinchZoom()
+    {
+        if (Input.touchCount == 2)
+        {
+            Touch t0 = Input.GetTouch(0);
+            Touch t1 = Input.GetTouch(1);
+
+            float currentDistance = Vector2.Distance(t0.position, t1.position);
+
+            // pierwsza klatka – inicjalizacja
+            if (lastPinchDistance == 0f)
+            {
+                lastPinchDistance = currentDistance;
+                return;
+            }
+
+            float delta = currentDistance - lastPinchDistance;
+
+            // skalowanie (wa¿ne – bez tego bêdzie za szybkie)
+            float zoomAmount = delta * 0.01f;
+
+            Vector3 pos = transform.position;
+            pos.y += zoomAmount * moveSpeed;
+
+            // clamp wysokoœci
+            pos.y = Mathf.Clamp(pos.y, MinHeight, MaxHeight);
+
+            transform.position = pos;
+
+            lastPinchDistance = currentDistance;
+        }
+        else
+        {
+            lastPinchDistance = 0f;
+        }
     }
 }
