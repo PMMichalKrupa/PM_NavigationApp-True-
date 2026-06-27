@@ -337,9 +337,11 @@ public class MainMenuController : MonoBehaviour
                 break;
             case 2:
                 NextButton.SetActive(false);
-                ManualText.text = "Example last scene\n" +
+                ManualText.text = "Poruszanie w trybie tabletu\n" +
                                     "\n" +
-                                    "Fill later";
+                                    "Poruszanie po mapie w trybie tabletu wykonywane jest przy pomocy joystick'a\n" +
+                                    "\n" +
+                                    "Pomniejszanie / powiekszanie ekranu wykonuje przy pomocy pinch/zoom";
                 break;
         }
     }
