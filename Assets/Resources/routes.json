@@ -7,7 +7,7 @@
       "endNode": "HP1sub04c",
       "endScene": "HP1",
       "startTime": "00:01",
-      "endTime": "03:00"
+      "endTime": "07:59"
     },
     {
       "routeName": "WCh1_to_HP1",
@@ -24,8 +24,8 @@
       "startScene": "HP1",
       "endNode": "WCh1",
       "endScene": "WCh0",
-      "startTime": "09:10",
-      "endTime": "10:00"
+      "startTime": "09:01",
+      "endTime": "16:59"
     },
     {
       "routeName": "Inner_HP1_Test",

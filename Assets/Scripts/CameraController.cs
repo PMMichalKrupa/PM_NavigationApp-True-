@@ -14,6 +14,11 @@ public class CameraController : MonoBehaviour
     {
         HandleMovement();
         HandlePinchZoom();
+        if (joystick == null)
+        {
+            joystick = FindFirstObjectByType<Joystick>();
+            return;
+        }
     }
 
     public void ShiftPosition(Vector3 positionStart, Vector3 positionEnd, List<Node> path)
