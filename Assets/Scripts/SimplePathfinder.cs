@@ -348,7 +348,7 @@ public class SimplePathfinder : MonoBehaviour
     // Wywoływane z UI
     public void DrawPath()
     {
-        bool CamSnap = PlayerPrefs.GetInt("SnapCameraOnChange", 0) == 1; ;
+        bool CamSnap = PlayerPrefs.GetInt("SnapCameraOnChange", 0) == 1;
         Debug.Log("Drawpath sie wykonuje");
         if (startNode == null || targetNode == null)
         {
@@ -397,6 +397,7 @@ public class SimplePathfinder : MonoBehaviour
                 marker.gameObject.SetActive(false);
             }
         }
+        if(CamSnap)
         {
             CC.ShiftPosition(startNode.transform.position, targetNode.transform.position, path);
         }
